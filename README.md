@@ -1,4 +1,4 @@
 # Shahzod Qahhorov
 My sites
 
-[Гипсолит Landing page](Sirius077.github.io/Гипсолит Landing page/)
+[Гипсолит Landing page](http://sirius077.github.io/Гипсолит%20Landing%20page/)
