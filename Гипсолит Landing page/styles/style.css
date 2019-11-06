@@ -83,6 +83,10 @@ section {
   border-radius: 8px;
   background-color: #fdb303;
 }
+.button:hover {
+  background-color: #db9a02;
+  color: #fff;
+}
 .main-title h1 {
   font-size: 4rem;
   font-weight: 700;
