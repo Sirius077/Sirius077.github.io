@@ -45,7 +45,10 @@ html {
 }
 
 body {
-    .reg()
+    .reg();
+    strong, p,span{
+        font-size: 1.5rem;
+    }
 }
 
 section {
@@ -253,14 +256,14 @@ section {
 .prev {
     position: absolute;
     left: 0%;
-    background: url(../img/arrow-left.svg) center no-repeat;
+    background: url(../img/prevArrow.svg) center no-repeat;
     background-size: 70%;
 }
 
 .next {
     position: absolute;
     right: 0%;
-    background: url(../img/arrow-right.svg) center no-repeat;
+    background: url(../img/nextArrow.svg) center no-repeat;
     background-size: 70%;
 }
 
@@ -336,6 +339,61 @@ section {
         font-weight: 700;
     }
 
+}
+
+//Секция с отзывами
+.feedback{
+    background: url(../img/feedback/feedback-bg.jpg) no-repeat center;
+    background-size: cover;
+    
+    &-prev-btn{
+        left: -4rem;
+    }
+    &-next-btn{
+        right:-4rem;
+    }
+    &-text{
+        position: relative;
+        padding: 1rem;
+        margin-top: 3rem;
+        border:2px solid @icon-color;
+        &::before{
+            content: "";
+            position: absolute;
+            top:-2rem;
+            left:2rem;
+            width: 2rem;
+            height: 2rem;
+            border:2px solid @icon-color;
+            border-bottom: none;
+            border-top-right-radius:100px;
+            background-color: #fff;
+        }
+    }
+    &-slider{
+        padding: 5rem 6rem;
+        box-shadow: 0 12px 18px rgba(0, 0, 0, 0.11);
+        background-color: @light;
+        .media{
+            margin-top: 3rem;
+            h5{
+                font-weight: 700;
+            }
+        }
+        &-btn{
+            position: absolute;
+            top:50%;
+            transform:translateY(-50%);
+            background-color: @icon-color;
+            width: 4rem;
+            height: 5rem;
+            border: none;
+            
+            img{
+                width: 50%;
+            }
+        }
+    }
 }
 
 // Оформление модальных окон
