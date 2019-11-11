@@ -56,19 +56,19 @@
                         </div>
                     </div>
                     <div class="col-xl-4 offset-xl-2 col-lg-5 offset-lg-1 col-md-8 offset-md-2 col-12">
-                        <form class="main-form">
-                            <h2 class="main-form-header">
+                        <form class="form">
+                            <h2 class="form-header">
                                 Для расчёта точной стоимости <br>закажите <strong>выезд замерщика</strong>
                             </h2>
                             <fieldset>
-                                <label class="main-form-label">Ваше имя</label>
-                                <input class="main-form-input" action="#" type="text">
-                                <label class="main-form-label">Номер телефона</label>
-                                <input class="main-form-input" action="#" type="text">
-                                <button class="main-form-button button" action="#" type="submit">
+                                <label class="form-label">Ваше имя</label>
+                                <input class="form-input" action="#" type="text">
+                                <label class="form-label">Номер телефона</label>
+                                <input class="form-input" action="#" type="text">
+                                <button class="form-button button" action="#" type="submit">
                                     Оставьте заявку
                                 </button>
-                                <small class="main-form-button-subtitle">
+                                <small class="form-button-subtitle">
                                     Приедем в день обращения*
                                 </small>
                             </fieldset>
@@ -146,35 +146,7 @@
         </div>
     </section>
 
-    <!--Модальные окна-->
-    <!--Получить консультацию-->
-    <div class="popup">
-        <!--Само(белое)Модальное окно-->
-        <div class="popup-dialog">
-            <!--Содержимое модального окна-->
-            <div class="popup-content">
-                <button class="popup-close">&times;</button>
-                <!--Заголовок окна -->
-                <h4 class="popup-header">
-                    Заинтересовало?
-                </h4>
-                <p>Оставьте контактные данные <br>для связи</p>
-                <div class="main-form popup-form">
-                    <form action="#">
-                        <label class="main-form-label" for="#">Ваше имя</label>
-                        <input class="main-form-input" action="#" type="text">
-                        <label class="main-form-label" for="#">Номер телефона</label>
-                        <input class="main-form-input" action="#" type="text">
-                        <label class="main-form-label" for="#">Сообшение</label>
-                        <textarea class="main-form-input" rows="5"></textarea>
-                        <button class="main-form-button button" action="#" type="submit">
-                            Оставьте заявку
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
+
 
     <section class="prices">
         <div class="container">
@@ -279,7 +251,7 @@
                 <div class="feedback-slider_item">
                     <div class="row">
                         <div class="col-lg-6">
-                            <div class="fotorama" data-nav="thumbs">
+                            <div class="fotorama" data-width="100%" data-nav="thumbs">
                                 <img src="img/feedback/photo/1.jpg" alt="">
                                 <img src="img/feedback/photo/2.jpg" alt="">
                                 <img src="img/feedback/photo/3.jpg" alt="">
@@ -307,6 +279,7 @@
                                     Она, одна всеми. За дороге подпоясал однажды подзаголовок сих диких, домах запятой.
                                 </p>
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -314,7 +287,7 @@
                 <div class="feedback-slider_item">
                     <div class="row">
                         <div class="col-lg-6">
-                            <div class="fotorama" data-nav="thumbs">
+                            <div class="fotorama" data-width="100%" data-nav="thumbs">
                                 <img src="img/feedback/photo/1.jpg" alt="">
                                 <img src="img/feedback/photo/2.jpg" alt="">
                                 <img src="img/feedback/photo/3.jpg" alt="">
@@ -329,13 +302,25 @@
                             <p>Выполнен за: <strong>10 дне</strong>й</p>
                             <p>Стоимость: <strong>550 рублей за квадратный метр</strong></p>
                             <p>Особенности: <strong>перепады неровности стен достигали до 6 см</strong></p>
+                            <div class="media">
+                                <img src="img/feedback/avatar.png" class="mr-3" alt="Заказчик">
+                                <div class="media-body">
+                                    <span>Заказчик</span>
+                                    <h5 class="mt-0">Алина Миюзова</h5>
+                                </div>
+                            </div>
+                            <div class="feedback-text">
+                                <p>Далеко-далеко за словесными горами, в стране гласных и согласных живут рыбные тексты.
+                                    Она, одна всеми. За дороге подпоясал однажды подзаголовок сих диких, домах запятой.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="feedback-slider_item">
                     <div class="row">
                         <div class="col-lg-6">
-                            <div class="fotorama" data-nav='thumbs'>
+                            <div class="fotorama" data-width="100%" data-nav='thumbs'>
                                 <img src="img/feedback/photo/1.jpg" alt="">
                                 <img src="img/feedback/photo/2.jpg" alt="">
                                 <img src="img/feedback/photo/3.jpg" alt="">
@@ -351,13 +336,81 @@
                             <p>Выполнен за: <strong>10 дне</strong>й</p>
                             <p>Стоимость: <strong>550 рублей за квадратный метр</strong></p>
                             <p>Особенности: <strong>перепады неровности стен достигали до 6 см</strong></p>
+                            <div class="media">
+                                <img src="img/feedback/avatar.png" class="mr-3" alt="Заказчик">
+                                <div class="media-body">
+                                    <span>Заказчик</span>
+                                    <h5 class="mt-0">Алина Миюзова</h5>
+                                </div>
+                            </div>
+                            <div class="feedback-text">
+                                <p>Далеко-далеко за словесными горами, в стране гласных и согласных живут рыбные тексты.
+                                    Она, одна всеми. За дороге подпоясал однажды подзаголовок сих диких, домах запятой.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="feedback-form">
+                        <h3>
+                            Хотите так же? Оставьте Ваши контактные данные
+                        </h3>
+
+                        <form action="#" class='form'>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <label class="form-label">Ваше имя</label>
+                                    <input class="form-input" action="#" type="text">
+
+                                </div>
+                                <div class="col-lg-6">
+                                    <label class="form-label">Номер телефона</label>
+                                    <input class="form-input" action="#" type="text">
+                                </div>
+                            </div>
+                            <button class="form-button feedback-btn button" action="#" type="submit">
+                                Оставьте заявку
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <img class="hand" src="img/feedback/hand.png" alt="рука">
         </div>
     </section>
 
+    <!--Модальные окна-->
+    <!--Получить консультацию-->
+    <div class="popup">
+        <!--Само(белое)Модальное окно-->
+        <div class="popup-dialog">
+            <!--Содержимое модального окна-->
+            <div class="popup-content">
+                <button class="popup-close">&times;</button>
+                <!--Заголовок окна -->
+                <h4 class="popup-header">
+                    Заинтересовало?
+                </h4>
+                <p>Оставьте контактные данные <br>для связи</p>
+                <div class="main-form popup-form">
+                    <form action="#">
+                        <label class="form-label" for="#">Ваше имя</label>
+                        <input class="form-input" action="#" type="text">
+                        <label class="form-label" for="#">Номер телефона</label>
+                        <input class="form-input" action="#" type="text">
+                        <label class="form-label" for="#">Сообшение</label>
+                        <textarea class="form-input" rows="5"></textarea>
+                        <button class="form-button button" action="#" type="submit">
+                            Оставьте заявку
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     <!--Add a jquery-->
     <script src="https://code.jquery.com/jquery-1.12.4.js"
         integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
