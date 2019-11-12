@@ -470,4 +470,11 @@ section .section-header p {
     word-break: break-all;
     font-size: 2rem;
   }
+  .form-label {
+    width: 100%;
+    font-size: 1.2rem;
+  }
+  .form-input {
+    width: 100%;
+  }
 }
