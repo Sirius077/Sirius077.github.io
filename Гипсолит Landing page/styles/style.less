@@ -49,7 +49,7 @@ body {
 
     strong,
     p,
-    span {
+    span,ul {
         font-size: 1.5rem;
     }
 }
@@ -262,6 +262,8 @@ section {
     }
 }
 
+//Блок 'преимущества'. Block 'features'
+
 .features-block {
     text-align: center;
 
@@ -314,7 +316,7 @@ section {
     background-size: 70%;
 }
 
-//Секция с ценами
+//Блок с ценами. Block 'prices'
 
 .prices {
     background: url(../img/prices/price-bg.jpg) repeat center;
@@ -390,7 +392,7 @@ section {
 
 }
 
-//Секция с отзывами
+//Блок с отзывами. Block 'feedback'
 .feedback {
     position: relative;
     background: url(../img/feedback/feedback-bg.jpg) no-repeat center;
@@ -478,15 +480,18 @@ section {
     max-width: 40rem;
 }
 
-// Блок Схема работы
-.scheme{
+//Блок схема работы.Block 'scheme'
+
+.scheme {
     background: url(../img/scheme/scheme-bg.png) no-repeat bottom -10rem right -10rem;
     background-size: 65rem;
-    &-block{
+
+    &-block {
         min-height: 30rem;
-       
+
     }
-    h3{ 
+
+    h3 {
         font-size: 2.2rem;
         font-weight: 700;
         padding-top: 3rem;
@@ -494,41 +499,109 @@ section {
     }
 }
 
-.all-inclusive{
-    background-color:@bg-light;
-    h2{
+// Блок 'Все включено'.Block 'all inclusive'
+
+.all-inclusive {
+    background-color: @bg-light;
+
+    h2 {
         color: @icon-color;
     }
-    .media{
+
+    .media {
         min-height: 10rem;
-       p{
-           font-size: 1rem;
-           
-       }
-        h4{
-            font-size:1.5rem;
-            font-weight: 700;     
+
+        p {
+            font-size: 1rem;
+
         }
-        .circle{
-            display: inline-block;         
+
+        h4 {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .circle {
+            display: inline-block;
             background-color: @icon-color;
             width: 100%;
             height: 100%;
             border-radius: 50%;
-        &-border{
-            display:inline-block;
-            height: 5rem;
-            width: 5rem;
-            padding: 0.3rem;
-            border:2px solid @icon-color;
-            border-radius: 50%;
-            text-align: center;
-            line-height:4rem;
-            color:@light;
-            font-size: 1.6rem;
-            font-weight: 700;
+
+            &-border {
+                display: inline-block;
+                height: 5rem;
+                width: 5rem;
+                padding: 0.3rem;
+                border: 2px solid @icon-color;
+                border-radius: 50%;
+                text-align: center;
+                line-height: 4rem;
+                color: @light;
+                font-size: 1.6rem;
+                font-weight: 700;
+            }
         }
     }
+}
+
+//Блок 'Развеем сомнения'. Block 'problems'
+
+.problems{
+    position: relative;
+    &-list{
+        padding:1.8rem;
+        border: 4px solid;  
+        min-height: 35rem;    
+        h4{
+            font-size: 2.1rem;
+            }
+        ul {
+            font-size: 1.4rem;
+            padding-top: 2rem;
+            padding-left:0;
+           li{
+               &::before{
+                   content: "";
+                   position: absolute;
+                   top: 50%;
+                   left: 0; 
+                   transform:translateY(-50%);
+                   width: 3rem;
+                   height: 3rem;
+               }
+               padding-left: 3.5rem;
+               position: relative;
+               list-style: none;
+               margin-bottom: 3rem;
+           }
+        }
+        &_bad{      
+               border-color: #e8e8e8;
+            h4{
+                opacity: 0.5;
+            }
+            li{
+                &::before{
+                    background: url(../img/problems/clear.svg) no-repeat center ;
+                    background-size: 50%;
+                }
+            }
+        }
+        &_good{
+            border-color:@icon-color;
+            li{
+                &:before{
+                    background: url(../img/problems/check.svg) no-repeat center;
+                    background-size:70%;
+                }
+            }
+        }
+    }
+    &-women{
+        position: absolute;
+        top:35%;
+        left:36%
     }
 }
 
@@ -587,13 +660,22 @@ section {
             padding: 3rem 5rem;
         }
 
-    .fotorama {
+        .fotorama {
             margin-bottom: 3rem;
         }
     }
-.hand{
-    display: none;
-}
+
+    .hand {
+        display: none;
+    }
+    .problems{
+        &-list{
+        min-height:40rem;
+        }
+        &-women{
+            left:31%;
+        }
+    }
 }
 
 @media (max-width:991px) {
@@ -631,12 +713,22 @@ section {
             margin: 0;
         }
     }
-    .feedback{
+
+    .feedback {
         text-align: center;
-    .media-body{
-        text-align: left;
+
+        .media-body {
+            text-align: left;
+        }
+
     }
-        
+    .problems{
+        &-list{
+            margin-bottom: 2rem;
+        }
+        &-women{
+            display:none;
+        }
     }
 }
 
@@ -648,21 +740,23 @@ section {
             text-align: center;
         }
     }
+
     .feedback {
-        
+
         &-prev-btn {
             left: 0;
         }
-    
+
         &-next-btn {
             right: 0;
         }
-}
-.scheme{
-    background: none;
-    text-align: center;
-   
-}
+    }
+
+    .scheme {
+        background: none;
+        text-align: center;
+
+    }
 }
 
 @media (max-width:576px) {
@@ -675,13 +769,15 @@ section {
             }
         }
     }
-    .form{
-        
-        &-label{
+
+    .form {
+
+        &-label {
             width: 100%;
             font-size: 1.2rem;
         }
-        &-input{
+
+        &-input {
             width: 100%;
         }
     }

@@ -20,7 +20,8 @@ body {
 }
 body strong,
 body p,
-body span {
+body span,
+body ul {
   font-size: 1.5rem;
 }
 section {
@@ -414,6 +415,59 @@ section .section-header p {
   font-size: 1.6rem;
   font-weight: 700;
 }
+.problems {
+  position: relative;
+}
+.problems-list {
+  padding: 1.8rem;
+  border: 4px solid;
+  min-height: 35rem;
+}
+.problems-list h4 {
+  font-size: 2.1rem;
+}
+.problems-list ul {
+  font-size: 1.4rem;
+  padding-top: 2rem;
+  padding-left: 0;
+}
+.problems-list ul li {
+  padding-left: 3.5rem;
+  position: relative;
+  list-style: none;
+  margin-bottom: 3rem;
+}
+.problems-list ul li::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 3rem;
+  height: 3rem;
+}
+.problems-list_bad {
+  border-color: #e8e8e8;
+}
+.problems-list_bad h4 {
+  opacity: 0.5;
+}
+.problems-list_bad li::before {
+  background: url(../img/problems/clear.svg) no-repeat center;
+  background-size: 50%;
+}
+.problems-list_good {
+  border-color: #70c849;
+}
+.problems-list_good li:before {
+  background: url(../img/problems/check.svg) no-repeat center;
+  background-size: 70%;
+}
+.problems-women {
+  position: absolute;
+  top: 35%;
+  left: 36%;
+}
 .popup {
   display: none;
   position: fixed;
@@ -465,6 +519,12 @@ section .section-header p {
   .hand {
     display: none;
   }
+  .problems-list {
+    min-height: 40rem;
+  }
+  .problems-women {
+    left: 31%;
+  }
 }
 @media (max-width: 991px) {
   .phone-block {
@@ -495,6 +555,12 @@ section .section-header p {
   }
   .feedback .media-body {
     text-align: left;
+  }
+  .problems-list {
+    margin-bottom: 2rem;
+  }
+  .problems-women {
+    display: none;
   }
 }
 @media (max-width: 767px) {
