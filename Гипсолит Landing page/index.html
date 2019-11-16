@@ -86,8 +86,8 @@
             <h2 class="section-header">
                 Преимущества работы с нами
             </h2>
-            <div class="features-slider">
-                <div class="features-block">
+            <div class="features-materials-slider">
+                <div class="features-materials-block">
                     <picture>
                         <source srcset="img/coin.svg" type="image">
                         <img src="img/features/coin.png" alt="Платите по факту">
@@ -102,7 +102,7 @@
 
                     </p>
                 </div>
-                <div class="features-block">
+                <div class="features-materials-block">
                     <picture>
                         <source srcset="img/folder.svg" type="image">
                         <img src="img/features/folder.png" alt="Заключаем договор">
@@ -116,7 +116,7 @@
 
                     </p>
                 </div>
-                <div class="features-block">
+                <div class="features-materials-block">
                     <picture>
                         <source srcset="img/clock.svg" type="image">
                         <img src="img/features/clock.png" alt="Точно в срок">
@@ -130,7 +130,7 @@
                         Вы платите меньше
                     </p>
                 </div>
-                <div class="features-block">
+                <div class="features-materials-block">
                     <picture>
                         <source srcset="img/piggy-bank.svg" type="image">
                         <img src="img/features/piggy-bank.png" alt="Экономите на материалах">
@@ -672,6 +672,79 @@
         </div>
     </section>
 
+    <!--Блок 'Материалы'. Block 'Materials'-->
+    <section class="materials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Материалы</h2>
+                <p>
+                    Мы работаем только качественными, проверенными временем материалами, следующих производителей:
+                </p>
+            </div>
+            <div class="features-materials-slider">
+                    <div class="features-materials-block materials-block">
+                        <picture>
+                            <img src="img/materials/knauf.png" alt="Knauf">
+                        </picture>
+                        <h3>
+                            Knauf
+                        </h3>
+                        <p>
+                                МП-75 <strong>245</strong> руб/меш <br>
+                                <strong>специальное предложения</strong>
+                        </p> 
+                        <a class="materials-link"href="#">Сертификат</a>
+                    </div>
+
+                    <div class="features-materials-block materials-block">
+                        <picture>
+                            <img src="img/materials/volma.png" alt="Volma">
+                        </picture>
+                        <h3>
+                            Volma
+                        </h3>
+                        <p>
+                                Аква слой <strong>245</strong> руб/меш <br>
+                                Гипс актив <strong>245</strong> руб/меш
+                        </p> 
+                        <a class="materials-link"href="#">Сертификат</a>
+                    </div>
+
+                    <div class="features-materials-block materials-block">
+                        <picture>
+                            <img src="img/materials/forman.png" alt="Forman">
+                        </picture>
+                        <h3>
+                            Forman
+                        </h3>
+                        <p>
+                                Аква слой  <strong>245</strong> руб/меш<br>
+                                Гипс актив  <strong>245</strong> руб/меш
+                                
+                        </p> 
+                        <a class="materials-link" href="#">Сертификат</a>
+                    </div>
+
+                    <div class="features-materials-block materials-block">
+                        <picture>
+                            <img src="img/materials/ceresit.png" alt="Ceresitsit">
+                        </picture>
+                        <h3>
+                            Ceresit
+                        </h3>
+                        <p>
+                                Аква слой <strong>245</strong> руб/меш <br>
+                                Гипс актив  <strong>245</strong> руб/меш
+                        </p> 
+                        <a class="materials-link" href="#">Сертификат</a>
+                    </div>
+                </div>
+                <p class="materials-offer">Вы можете приобрести материалы по оптовым ценам на сайте  или по телефону 
+                <a  class="materials-link" href="#">gicema.ru</a>
+                <strong>+7 495 790 69 90</strong></p>
+        </div>
+    </section>
+
     <!--Модальные окна-->
     <!--Получить консультацию-->
     <div class="popup">
@@ -729,8 +802,8 @@
                 nextArrow: '<button type="button" class="feedback-slider-btn feedback-next-btn"><img src="img/feedback/nextArrow.svg" alt="Вперед"></button>'
 
             });
-            //Слайд с преимуществами
-            $('.features-slider').slick({
+            //Слайд с преимуществами и материалами
+            $('.features-materials-slider').slick({
                 infinite: true,
                 slidesToShow: 4,
                 slidesToScroll: 1,

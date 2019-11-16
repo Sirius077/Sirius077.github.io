@@ -193,20 +193,20 @@ section .section-header h2 {
 section .section-header p {
   font-size: 1.6rem;
 }
-.features-block {
+.features-materials-block {
   text-align: center;
 }
-.features-block img {
+.features-materials-block img {
   min-height: 8rem;
   display: block;
   margin: 0 auto;
 }
-.features-block h3 {
+.features-materials-block h3 {
   font-size: 2rem;
   font-weight: 700;
   padding-top: 6rem;
 }
-.features-block p {
+.features-materials-block p {
   display: inline-block;
   width: 85%;
   font-size: 1.4rem;
@@ -468,6 +468,28 @@ section .section-header p {
   top: 35%;
   left: 36%;
 }
+.materials {
+  background: #fff url(../img/materials/material_bg.png) no-repeat center;
+}
+.materials-link {
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #70c849;
+}
+.materials-link:hover {
+  text-decoration: none;
+  color: #58aa34;
+}
+.materials-block p {
+  padding-bottom: 3rem;
+}
+.materials-block h3 {
+  padding-top: 1rem;
+}
+.materials-offer {
+  padding-top: 7rem;
+  text-align: center;
+}
 .popup {
   display: none;
   position: fixed;
@@ -524,6 +546,9 @@ section .section-header p {
   }
   .problems-women {
     left: 31%;
+  }
+  .materials strong {
+    font-size: 1.3rem;
   }
 }
 @media (max-width: 991px) {

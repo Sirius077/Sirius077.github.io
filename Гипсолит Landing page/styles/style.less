@@ -49,7 +49,8 @@ body {
 
     strong,
     p,
-    span,ul {
+    span,
+    ul {
         font-size: 1.5rem;
     }
 }
@@ -264,7 +265,9 @@ section {
 
 //Блок 'преимущества'. Block 'features'
 
-.features-block {
+.features-materials{
+
+ &-block {
     text-align: center;
 
     img {
@@ -286,6 +289,7 @@ section {
         padding-top: 3.5rem;
     }
 
+}
 }
 
 .slick-active {
@@ -547,63 +551,100 @@ section {
 
 //Блок 'Развеем сомнения'. Block 'problems'
 
-.problems{
+.problems {
     position: relative;
-    &-list{
-        padding:1.8rem;
-        border: 4px solid;  
-        min-height: 35rem;    
-        h4{
+
+    &-list {
+        padding: 1.8rem;
+        border: 4px solid;
+        min-height: 35rem;
+
+        h4 {
             font-size: 2.1rem;
-            }
+        }
+
         ul {
             font-size: 1.4rem;
             padding-top: 2rem;
-            padding-left:0;
-           li{
-               &::before{
-                   content: "";
-                   position: absolute;
-                   top: 50%;
-                   left: 0; 
-                   transform:translateY(-50%);
-                   width: 3rem;
-                   height: 3rem;
-               }
-               padding-left: 3.5rem;
-               position: relative;
-               list-style: none;
-               margin-bottom: 3rem;
-           }
+            padding-left: 0;
+
+            li {
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    transform: translateY(-50%);
+                    width: 3rem;
+                    height: 3rem;
+                }
+
+                padding-left: 3.5rem;
+                position: relative;
+                list-style: none;
+                margin-bottom: 3rem;
+            }
         }
-        &_bad{      
-               border-color: #e8e8e8;
-            h4{
+
+        &_bad {
+            border-color: #e8e8e8;
+
+            h4 {
                 opacity: 0.5;
             }
-            li{
-                &::before{
-                    background: url(../img/problems/clear.svg) no-repeat center ;
+
+            li {
+                &::before {
+                    background: url(../img/problems/clear.svg) no-repeat center;
                     background-size: 50%;
                 }
             }
         }
-        &_good{
-            border-color:@icon-color;
-            li{
-                &:before{
+
+        &_good {
+            border-color: @icon-color;
+
+            li {
+                &:before {
                     background: url(../img/problems/check.svg) no-repeat center;
-                    background-size:70%;
+                    background-size: 70%;
                 }
             }
         }
     }
-    &-women{
+
+    &-women {
         position: absolute;
-        top:35%;
-        left:36%
+        top: 35%;
+        left: 36%
     }
 }
+
+// Блок 'Материалы'. Block 'Materials'
+    .materials{
+        background: @light url(../img/materials/material_bg.png) no-repeat center;
+        &-link{
+            font-size: 1.6rem;
+            text-decoration: none;
+            color:@icon-color;
+          &:hover{
+              text-decoration:none;
+              color:darken(@icon-color,10);
+          }
+        }
+        &-block{
+        p{
+            padding-bottom: 3rem;
+        }
+        h3{
+            padding-top: 1rem;
+        }
+    }
+    &-offer{
+        padding-top: 7rem;
+        text-align:center;
+    }
+    }
 
 // Оформление модальных окон
 .popup {
@@ -668,12 +709,19 @@ section {
     .hand {
         display: none;
     }
-    .problems{
-        &-list{
-        min-height:40rem;
+
+    .problems {
+        &-list {
+            min-height: 40rem;
         }
-        &-women{
-            left:31%;
+
+        &-women {
+            left: 31%;
+        }
+    }
+    .materials{
+        strong{
+            font-size: 1.3rem;
         }
     }
 }
@@ -722,12 +770,14 @@ section {
         }
 
     }
-    .problems{
-        &-list{
+
+    .problems {
+        &-list {
             margin-bottom: 2rem;
         }
-        &-women{
-            display:none;
+
+        &-women {
+            display: none;
         }
     }
 }
