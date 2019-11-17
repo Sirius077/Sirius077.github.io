@@ -363,7 +363,7 @@ section .section-header p {
 .hand {
   position: absolute;
   bottom: 0;
-  left: 0;
+  left: -10rem;
   max-width: 40rem;
 }
 .scheme {
