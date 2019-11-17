@@ -470,6 +470,7 @@ section .section-header p {
 }
 .materials {
   background: #fff url(../img/materials/material_bg.png) no-repeat center;
+  padding: 0;
 }
 .materials-link {
   font-size: 1.6rem;
