@@ -77,7 +77,7 @@ section {
         font-size: 1.8rem;
     }
 
-    &-input {
+    &-input, &-textarea{
         font-size: 1.7rem;
         padding-top: 1.7rem;
         padding-bottom: 1.7rem;
@@ -623,6 +623,9 @@ section {
     .materials{
         background: @light url(../img/materials/material_bg.png) no-repeat center;
         padding:0;
+        h2{
+            margin-top: 15rem;
+        }
         &-link{
             font-size: 1.6rem;
             text-decoration: none;
@@ -678,6 +681,39 @@ section {
     }
 }
 
+// Блок 'Контакты'. Block 'contacts 
+.contacts{
+    background:url(../img/Contacts/contact_bg.png) center  no-repeat;
+    h2{
+        margin-bottom: 5rem;
+        font-size: 3.6rem;
+    }
+    p{
+        margin-bottom: 2rem;
+    }
+    &-link{
+        color:@text-color;
+        border-bottom: 1px dotted @text-color;
+        &:hover{
+            color:darken(@text-color,10%);
+            text-decoration: none;
+        }
+    }
+}
+
+//Footer
+footer{
+    padding-top: 4rem;
+    .footer{
+        &-contacts{
+        text-align: center;
+        }
+    }
+    .dev-logo{
+        text-align: center;
+    }
+}
+
 // Оформление модальных окон
 .popup {
     display: none;
@@ -727,6 +763,8 @@ section {
     }
 }
 
+
+
 @media (max-width:1199px) {
     .feedback {
         &-form {
@@ -755,6 +793,7 @@ section {
         strong{
             font-size: 1.3rem;
         }
+        
     }
 }
 
@@ -815,6 +854,18 @@ section {
     .tour{
         background:none ;
         background-color: @bg-light;
+    }
+    .contacts{
+        background: @bg-light;
+        &-form{
+            margin-top: 3rem;
+        }
+    }
+    .footer{
+        text-align: center;
+        &-contacts{
+            margin: 2rem 0;
+        }
     }
 }
 

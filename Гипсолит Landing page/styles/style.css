@@ -44,7 +44,8 @@ section {
 .form-header {
   font-size: 1.8rem;
 }
-.form-input {
+.form-input,
+.form-textarea {
   font-size: 1.7rem;
   padding-top: 1.7rem;
   padding-bottom: 1.7rem;
@@ -472,6 +473,9 @@ section .section-header p {
   background: #fff url(../img/materials/material_bg.png) no-repeat center;
   padding: 0;
 }
+.materials h2 {
+  margin-top: 15rem;
+}
 .materials-link {
   font-size: 1.6rem;
   text-decoration: none;
@@ -513,6 +517,33 @@ section .section-header p {
 }
 .upsell-blocks p {
   padding: 2rem 0;
+}
+.contacts {
+  background: url(../img/Contacts/contact_bg.png) center no-repeat;
+}
+.contacts h2 {
+  margin-bottom: 5rem;
+  font-size: 3.6rem;
+}
+.contacts p {
+  margin-bottom: 2rem;
+}
+.contacts-link {
+  color: #5e5e5e;
+  border-bottom: 1px dotted #5e5e5e;
+}
+.contacts-link:hover {
+  color: #454545;
+  text-decoration: none;
+}
+footer {
+  padding-top: 4rem;
+}
+footer .footer-contacts {
+  text-align: center;
+}
+footer .dev-logo {
+  text-align: center;
 }
 .popup {
   display: none;
@@ -614,6 +645,18 @@ section .section-header p {
   .tour {
     background: none ;
     background-color: #f5f5f5;
+  }
+  .contacts {
+    background: #f5f5f5;
+  }
+  .contacts-form {
+    margin-top: 3rem;
+  }
+  .footer {
+    text-align: center;
+  }
+  .footer-contacts {
+    margin: 2rem 0;
   }
 }
 @media (max-width: 767px) {
