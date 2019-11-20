@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles/bootstrap.css">
+    <link rel="stylesheet" href="styles/animate.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" type="text/css" href="styles/slick.css" />
     <link rel="stylesheet" type="text/css" href="styles/slick-theme.css" />
@@ -15,7 +16,7 @@
 <body>
     <main class="main">
         <div class="container">
-            <div class="header">
+            <div class="header wow fadeIn" data-wow-delay="0.3s">
                 <div class="row">
                     <div class=" col-lg-3 col-md-4 col-12">
                         <div class="logo">
@@ -42,7 +43,7 @@
             <div class="main-content">
                 <div class="row">
                     <div class="col-lg-6 col-12">
-                        <div class="main-title">
+                        <div class="main-title wow fadeInLeft">
                             <h1>
                                 Автоматизированная штукатурка стен
                             </h1>
@@ -56,7 +57,7 @@
                         </div>
                     </div>
                     <div class="col-xl-4 offset-xl-2 col-lg-5 offset-lg-1 col-md-8 offset-md-2 col-12">
-                        <form class="form">
+                        <form class="form wow fadeInRight">
                             <h2 class="form-header">
                                 Для расчёта точной стоимости <br>закажите <strong>выезд замерщика</strong>
                             </h2>
@@ -64,7 +65,7 @@
                                 <label class="form-label">Ваше имя</label>
                                 <input class="form-input" action="#" type="text">
                                 <label class="form-label">Номер телефона</label>
-                                <input class="form-input" action="#" type="text">
+                                <input class="form-input" action="#" id="phone" type="text">
                                 <button class="form-button button" action="#" type="submit">
                                     Оставьте заявку
                                 </button>
@@ -87,7 +88,7 @@
                 Преимущества работы с нами
             </h2>
             <div class="features-materials-slider">
-                <div class="features-materials-block">
+                <div class="features-materials-block wow fadeIn" data-wow-delay="0.1s">
                     <picture>
                         <source srcset="img/coin.svg" type="image">
                         <img src="img/features/coin.png" alt="Платите по факту">
@@ -102,7 +103,7 @@
 
                     </p>
                 </div>
-                <div class="features-materials-block">
+                <div class="features-materials-block wow fadeIn" data-wow-delay="0.2s">
                     <picture>
                         <source srcset="img/folder.svg" type="image">
                         <img src="img/features/folder.png" alt="Заключаем договор">
@@ -116,7 +117,7 @@
 
                     </p>
                 </div>
-                <div class="features-materials-block">
+                <div class="features-materials-block wow fadeIn" data-wow-delay="0.3s">
                     <picture>
                         <source srcset="img/clock.svg" type="image">
                         <img src="img/features/clock.png" alt="Точно в срок">
@@ -130,7 +131,7 @@
                         Вы платите меньше
                     </p>
                 </div>
-                <div class="features-materials-block">
+                <div class="features-materials-block wow fadeIn" data-wow-delay="0.4s">
                     <picture>
                         <source srcset="img/piggy-bank.svg" type="image">
                         <img src="img/features/piggy-bank.png" alt="Экономите на материалах">
@@ -172,7 +173,7 @@
 
             <div class="row">
                 <div class="col-lg-4 offset-lg-0 col-md-8 offset-md-2">
-                    <div class="prices-block">
+                    <div class="prices-block wow fadeIn" data-wow-delay="0.1s">
                         <h4>Штукатурка вашим материалом
                         </h4>
                         <img src="img/prices/1.jpg" alt="Штукатурка вашим материалом">
@@ -186,7 +187,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 offset-lg-0 col-md-8 offset-md-2">
-                    <div class="prices-block">
+                    <div class="prices-block wow fadeIn" data-wow-delay="0.2s">
                         <h4>Штукатурка под шпаклёвку
                         </h4>
                         <img src="img/prices/2.jpg" alt="Штукатурка под шпаклёвку"><span class="prices-tag">от 530
@@ -210,7 +211,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 offset-lg-0 col-md-8 offset-md-2">
-                    <div class="prices-block">
+                    <div class="prices-block wow fadeIn" data-wow-delay="0.3s">
                         <h4>Штукатурка под обои
                         </h4>
                         <img src="img/prices/3.jpg" alt="Штукатурка под обои"><span class="prices-tag">от 560
@@ -404,8 +405,8 @@
             </div>
             <div class="row">
                 <div class="col-lg-3 offset-lg-0 col-md-4 offset-md-1 col-8 offset-2">
-                    <div class="scheme-block">
-                        <img src="img/scheme/1.png" alt="">
+                    <div class="scheme-block wow fadeIn" data-wow-delay="0.1s">
+                        <img src="img/scheme/1.png" alt="Заявка">
                         <h3>Заявка</h3>
                         <p>
                             Оставляете онлайн заявку или звоните +7 495 771 05 08
@@ -413,8 +414,8 @@
                     </div>
                 </div>
                 <div class="col-lg-3 offset-lg-1 col-md-4 offset-md-1 col-8 offset-2">
-                    <div class="scheme-block">
-                        <img src="img/scheme/2.png" alt="">
+                    <div class="scheme-block wow fadeIn" data-wow-delay="0.2s">
+                        <img src="img/scheme/2.png" alt="Выезд специалиста">
                         <h3>
                             Выезд специалиста
                         </h3>
@@ -425,8 +426,8 @@
                     </div>
                 </div>
                 <div class="col-lg-3 offset-lg-1 col-md-4 offset-md-1 col-8 offset-2">
-                    <div class="scheme-block">
-                        <img src="img/scheme/3.png" alt="">
+                    <div class="scheme-block wow fadeIn" data-wow-delay="0.3s">
+                        <img src="img/scheme/3.png" alt="Составление договора">
                         <h3>
                             Составление договора
                         </h3>
@@ -435,8 +436,8 @@
                     </div>
                 </div>
                 <div class="col-lg-3 offset-lg-0 col-md-4 offset-md-1 col-8 offset-2">
-                    <div class="scheme-block">
-                        <img src="img/scheme/4.png" alt="">
+                    <div class="scheme-block wow fadeIn" data-wow-delay="0.4s">
+                        <img src="img/scheme/4.png" alt="Начало работ">
                         <h3>
                             Начало работ
                         </h3>
@@ -446,8 +447,8 @@
                     </div>
                 </div>
                 <div class="col-lg-3 offset-lg-1 col-md-4 offset-md-1 col-8 offset-2">
-                    <div class="scheme-block">
-                        <img src="img/scheme/5.png" alt="">
+                    <div class="scheme-block wow fadeIn" data-wow-delay="0.5s">
+                        <img src="img/scheme/5.png" alt="Завершение работ">
                         <h3>
                             Завершение работ
                         </h3>
@@ -474,10 +475,10 @@
             </div>
             <div class="row">
                 <div class="col-lg-3 col-md-6">
-                    <div class="media">
+                    <div class="media wow fadeIn" data-wow-delay="0.1s">
                         <div class="media-left">
                             <span class="circle-border mr-3">
-                                <span class="circle">
+                                <span class="circle" >
                                     1.
                                 </span>
                             </span>
@@ -493,7 +494,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <div class="media">
+                    <div class="media wow fadeIn" data-wow-delay="0.2s">
                         <div class="media-left">
                             <span class="circle-border mr-3">
                                 <span class="circle">
@@ -511,7 +512,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <div class="media">
+                    <div class="media wow fadeIn" data-wow-delay="0.3s">
                         <div class="media-left">
                             <span class="circle-border mr-3">
                                 <span class="circle">
@@ -526,7 +527,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <div class="media">
+                    <div class="media wow fadeIn" data-wow-delay="0.4s">
                         <div class="media-left">
                             <span class="circle-border mr-3">
                                 <span class="circle">
@@ -541,7 +542,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <div class="media">
+                    <div class="media wow fadeIn" data-wow-delay="0.5s">
                         <div class="media-left">
                             <span class="circle-border mr-3">
                                 <span class="circle">
@@ -559,7 +560,7 @@
                 </div>
 
                 <div class="col-lg-3 col-md-6">
-                    <div class="media">
+                    <div class="media wow fadeIn" data-wow-delay="0.6s">
                         <div class="media-left">
                             <span class="circle-border mr-3">
                                 <span class="circle">
@@ -575,7 +576,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <div class="media">
+                    <div class="media wow fadeIn" data-wow-delay="0.7s">
                         <div class="media-left">
                             <span class="circle-border mr-3">
                                 <span class="circle">
@@ -591,7 +592,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <div class="media">
+                    <div class="media wow fadeIn" data-wow-delay="0.8s">
                         <div class="media-left">
                             <span class="circle-border mr-3">
                                 <span class="circle">
@@ -620,7 +621,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-5">
-                    <div class="problems-list problems-list_bad">
+                    <div class="problems-list problems-list_bad wow fadeInLeft">
                         <h4>
                             Какие могут быть проблемы:
                         </h4>
@@ -641,7 +642,7 @@
                     </div>
                 </div>
                 <div class="col-lg-5 offset-lg-2">
-                    <div class="problems-list problems-list_good">
+                    <div class="problems-list problems-list_good wow fadeInRight">
                         <h4>
                             Наше решение:
                         </h4>
@@ -677,7 +678,7 @@
                 </p>
             </div>
             <div class="features-materials-slider">
-                <div class="features-materials-block materials-block">
+                <div class="features-materials-block materials-block wow fadeIn" data-wow-delay="0.1s">
                     <picture>
                         <img src="img/materials/knauf.png" alt="Knauf">
                     </picture>
@@ -691,7 +692,7 @@
                     <a class="materials-link" href="#">Сертификат</a>
                 </div>
 
-                <div class="features-materials-block materials-block">
+                <div class="features-materials-block materials-block wow fadeIn" data-wow-delay="0.2s">
                     <picture>
                         <img src="img/materials/volma.png" alt="Volma">
                     </picture>
@@ -705,7 +706,7 @@
                     <a class="materials-link" href="#">Сертификат</a>
                 </div>
 
-                <div class="features-materials-block materials-block">
+                <div class="features-materials-block materials-block wow fadeIn" data-wow-delay="0.3s">
                     <picture>
                         <img src="img/materials/forman.png" alt="Forman">
                     </picture>
@@ -720,7 +721,7 @@
                     <a class="materials-link" href="#">Сертификат</a>
                 </div>
 
-                <div class="features-materials-block materials-block">
+                <div class="features-materials-block materials-block wow fadeIn" data-wow-delay="0.4s">
                     <picture>
                         <img src="img/materials/ceresit.png" alt="Ceresitsit">
                     </picture>
@@ -746,7 +747,7 @@
             <div class="main-content">
                 <div class="row">
                     <div class="col-lg-6 col-12">
-                        <div class="main-title">
+                        <div class="main-title wow fadeIn" data-wow-delay="0.1s ">
                             <h1>
                                 Посмотрите <br>
                                 как мы работаем
@@ -762,7 +763,7 @@
                         </div>
                     </div>
                     <div class="col-xl-4 offset-xl-2 col-lg-5 offset-lg-1 col-md-8 offset-md-2 col-12">
-                        <form class="form">
+                        <form class="form wow fadeIn" data-wow-delay="0.2s">
                             <h2 class="form-header">
                                 Оставьте контактные данные для связи
                             </h2>
@@ -770,7 +771,7 @@
                                 <label class="form-label">Ваше имя</label>
                                 <input class="form-input" action="#" type="text">
                                 <label class="form-label">Номер телефона</label>
-                                <input class="form-input" action="#" type="text">
+                                <input class="form-input" action="#" id="phone2" type="text">
                                 <button class="form-button button" action="#" type="submit">
                                     Записаться на просмотр
                                 </button>
@@ -799,7 +800,7 @@
             <div class="row">
 
                 <div class="col-lg-4">
-                    <div class="upsell-blocks">
+                    <div class="upsell-blocks wow fadeIn" data-wow-delay="0.1s">
                         <img src="img/upsell/1.jpg" alt="Монтаж электропроводки">
                         <p>
                             Монтаж электропроводки
@@ -809,7 +810,7 @@
                 </div>
 
                 <div class="col-lg-4">
-                    <div class="upsell-blocks">
+                    <div class="upsell-blocks wow fadeIn" data-wow-delay="0.2s">
                         <img src="img/upsell/2.jpg" alt="Стяжка пола">
                         <p>Стяжка пола</p>
                         <button class="button">Цены</button>
@@ -817,7 +818,7 @@
                 </div>
 
                 <div class="col-lg-4">
-                    <div class="upsell-blocks">
+                    <div class="upsell-blocks wow fadeIn" data-wow-delay="0.3s">
                         <img src="img/upsell/3.jpg" alt="Сантехнические работы">
                         <p>Сантехнические работы</p>
                         <button class="button">Цены</button>
@@ -832,7 +833,7 @@
     <section class="contacts">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.2s">
                     <h2>Контакты</h2>
                     <p>
                         Адрес офиса:<br>
@@ -856,7 +857,7 @@
                     </p>
                 </div>
                 <div class="col-xl-4 offset-xl-2 col-lg-5 offset-lg-1 col-md-6 offset-md-3">
-                    <form class="form">
+                    <form class="form wow fadeIn" data-wow-delay="0.4s">
                         <h3 class="form-header">
                             Оставьте контактные данные для связи
                         </h3>
@@ -864,7 +865,7 @@
                             <label class="form-label">Ваше имя</label>
                             <input class="form-input" action="#" type="text">
                             <label class="form-label">Номер телефона</label>
-                            <input class="form-input" action="#" type="text">
+                            <input class="form-input" action="#" id="phone3" type="text">
                             <label class="form-label">Email</label>
                             <input class="form-input"></input>
                             <label class="form-label" for="#">Сообщение</label>
@@ -927,7 +928,7 @@
                         <label class="form-label" for="#">Ваше имя</label>
                         <input class="form-input" action="#" type="text">
                         <label class="form-label" for="#">Номер телефона</label>
-                        <input class="form-input" action="#" type="text">
+                        <input class="form-input" id="phone4" action="#" type="text">
                         <label class="form-label" for="#">Сообшение</label>
                         <textarea class="form-input" rows="5"></textarea>
                         <button class="form-button button" action="#" type="submit">
@@ -938,16 +939,34 @@
             </div>
         </div>
     </div>
-    <!--Add a jquery-->
-    <script src="https://code.jquery.com/jquery-1.12.4.js"
-        integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
-    <!--Add a slick-slider-->
+    <!--Add  jquery-->
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <!--Add  slick-slider-->
     <script src="js/slick.min.js"></script>
 
-    <!--Add a fotorama-->
+    <!--Add  fotorama-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
 
+    <!--Add wow.js-->
+    <script src="js/wow.js"></script>
+    <script>
+    new WOW().init();
+    </script>
+    <!--Add jquery Mask input-->
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script>
+    jQuery(function($){
+   $("#phone").mask("7 (999) 999-9999");
+   $("#phone2").mask("7 (999) 999-9999");
+   $("#phone3").mask("7 (999) 999-9999");
+   $("#phone4").mask("7 (999) 999-9999");
+
+});
+     </script>
     <!--Initialize slick-slider-->
     <script>
         //Скрипт для появления всплывающего окна
@@ -956,7 +975,7 @@
                 event.preventDefault();
                 $('.popup').fadeIn();
             });
-            $('popup-close').on('click', function (event) {
+            $('.popup-close').on('click', function (event) {
                 event.preventDefault();
                 $('.popup').fadeOut();
             });
