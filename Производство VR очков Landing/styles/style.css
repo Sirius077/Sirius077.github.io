@@ -1,0 +1,134 @@
+@font-face {
+  font-family: 'HelveticaNeueCyr';
+  src: url('../fonts/HelveticaNeueCyr-Medium.eot');
+  src: url('../fonts/HelveticaNeueCyr-Medium.eot?#iefix') format('embedded-opentype'), url('../fonts/HelveticaNeueCyr-Medium../fonts/.woff2') format('woff2'), url('../fonts/HelveticaNeueCyr-Medium.woff') format('woff'), url('../fonts/HelveticaNeueCyr-Medium.ttf') format('truetype'), url('../fonts/HelveticaNeueCyr-Medium.svg#HelveticaNeueCyr-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: '../fonts/HelveticaNeueCyr-Bold';
+  src: url('../fonts/HelveticaNeueCyr-Bold.eot');
+  src: url('../fonts/HelveticaNeueCyr-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/HelveticaNeueCyr-Bold.woff2') format('woff2'), url('../fonts/HelveticaNeueCyr-Bold.woff') format('woff'), url('../fonts/HelveticaNeueCyr-Bold.ttf') format('truetype'), url('../fonts/HelveticaNeueCyr-Bold.svg#HelveticaNeueCyr-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: '../fonts/HelveticaNeueCyr-Black';
+  src: url('../fonts/HelveticaNeueCyr-Black.eot');
+  src: url('../fonts/HelveticaNeueCyr-Black.eot?#iefix') format('embedded-opentype'), url('../fonts/HelveticaNeueCyr-Black.woff2') format('woff2'), url('../fonts/HelveticaNeueCyr-Black.woff') format('woff'), url('../fonts/HelveticaNeueCyr-Black.ttf') format('truetype'), url('../fonts/HelveticaNeueCyr-Black.svg#HelveticaNeueCyr-Black') format('svg');
+  font-weight: 900;
+  font-style: normal;
+}
+html {
+  font-size: 10px;
+}
+body {
+  font-family: HelveticaNeueCyr, Helvetica, sans-serif;
+}
+p,
+span,
+strong,
+ul {
+  font-size: 1.6rem;
+  color: #ffffff;
+}
+section {
+  margin-top: 10rem;
+}
+section button {
+  color: #ffffff;
+  background-color: #94ca2d;
+  border: none;
+  padding-top: 1rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 0rem;
+  border-radius: 3px;
+}
+section button:hover {
+  background-color: #75a024;
+}
+.main {
+  background: url(../img/main/main_bg.jpg) no-repeat center;
+  background-size: cover;
+  margin-bottom: 5rem;
+}
+.main .header {
+  padding-top: 3rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding-bottom: 2rem;
+}
+.main .header h3 {
+  padding-left: 2rem;
+  font-size: 2rem;
+  color: #ffffff;
+}
+.main .header .phone p {
+  color: #ffffff;
+  font-size: 2.5rem;
+}
+.main .header .phone-link {
+  text-align: right;
+}
+.main .header .phone-link a {
+  font-size: 1.6rem;
+  color: #94ca2d;
+}
+.main-img img {
+  max-width: 100%;
+  height: auto;
+  text-align: left;
+}
+.main-content h1 {
+  color: #ffffff;
+  font-size: 3.9rem;
+  font-weight: 700;
+}
+.main-content h2 {
+  font-weight: 700;
+  color: #ffffff;
+}
+.main-btn {
+  display: block;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+@media (max-width: 1199px) {
+  .main .header h3 {
+    margin-left: 2rem;
+  }
+}
+@media (max-width: 991px) {
+  .main .header h3 {
+    padding-left: 0rem;
+    font-size: 1.8rem;
+  }
+  .main h1 {
+    font-size: 3.7rem;
+  }
+}
+@media (max-width: 767px) {
+  .main .header .phone-link a {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 576px) {
+  .main {
+    text-align: center;
+  }
+  .main-btn {
+    display: inline-block;
+    text-align: right;
+  }
+  .main-img {
+    text-align: center;
+  }
+  .main .header h3 {
+    padding-top: 2rem;
+  }
+  .main .header .phone-link {
+    text-align: center;
+  }
+}

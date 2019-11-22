@@ -1,0 +1,214 @@
+//Fonts
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    src: url('../fonts/HelveticaNeueCyr-Medium.eot');
+    src: url('../fonts/HelveticaNeueCyr-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/HelveticaNeueCyr-Medium../fonts/.woff2') format('woff2'),
+        url('../fonts/HelveticaNeueCyr-Medium.woff') format('woff'),
+        url('../fonts/HelveticaNeueCyr-Medium.ttf') format('truetype'),
+        url('../fonts/HelveticaNeueCyr-Medium.svg#HelveticaNeueCyr-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: '../fonts/HelveticaNeueCyr-Bold';
+    src: url('../fonts/HelveticaNeueCyr-Bold.eot');
+    src: url('../fonts/HelveticaNeueCyr-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/HelveticaNeueCyr-Bold.woff2') format('woff2'),
+        url('../fonts/HelveticaNeueCyr-Bold.woff') format('woff'),
+        url('../fonts/HelveticaNeueCyr-Bold.ttf') format('truetype'),
+        url('../fonts/HelveticaNeueCyr-Bold.svg#HelveticaNeueCyr-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: '../fonts/HelveticaNeueCyr-Black';
+    src: url('../fonts/HelveticaNeueCyr-Black.eot');
+    src: url('../fonts/HelveticaNeueCyr-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/HelveticaNeueCyr-Black.woff2') format('woff2'),
+        url('../fonts/HelveticaNeueCyr-Black.woff') format('woff'),
+        url('../fonts/HelveticaNeueCyr-Black.ttf') format('truetype'),
+        url('../fonts/HelveticaNeueCyr-Black.svg#HelveticaNeueCyr-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+.reg() {
+    font-family: HelveticaNeueCyr, Helvetica, sans-serif;
+}
+
+.bold() {
+    font-family: HelveticaNeueCyr-Bold, Helvetica, sans-serif;
+}
+
+.black() {
+    font-family: HelveticaNeueCyr-Black, Helvetica, sans-serif;
+}
+
+//Colors
+@light: #ffffff;
+@icons-color: #18a7d0;
+@btn-color: #94ca2d;
+@price-color: #b61919;
+@bg_light: #f8f8f0;
+
+//Basic settings
+html {
+    font-size: 10px;
+
+}
+
+body {
+    .reg();
+}
+
+p,
+span,
+strong,
+ul {
+    font-size: 1.6rem;
+    color:@light
+}
+
+section {
+    margin-top: 10rem;
+
+    button {
+        color: @light;
+        background-color: @btn-color;
+        border: none;
+        padding-top: 1rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        padding-bottom: 0rem;
+        border-radius: 3px;
+
+        &:hover {
+            background-color: darken(@btn-color, 10%);
+        }
+    }
+
+
+}
+
+//Header 
+.main {
+    background: url(../img/main/main_bg.jpg) no-repeat center;
+    background-size: cover;
+    margin-bottom: 5rem;
+    .header {
+        
+        padding-top: 3rem;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding-bottom: 2rem;
+        
+        h3 {
+            padding-left: 2rem;
+            font-size: 2rem;
+            color:@light;
+        }
+
+        .phone {
+            p{
+            color:@light;
+            font-size: 2.5rem;
+            }
+            &-link {
+                text-align:right;
+                a {
+                    font-size: 1.6rem;
+                    color: @btn-color;
+                }
+            }
+        }
+    }
+    &-img{
+        img{
+        max-width: 100%;
+        height: auto;
+        text-align: left;}
+    }
+    &-content{
+        h1 {
+            color: @light;
+            font-size: 3.9rem;
+            font-weight: 700;
+        }
+        h2{
+            font-weight: 700;
+            color:@light;
+        }
+}
+        &-btn {
+            display: block;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+}
+
+//Media 
+@media (max-width: 1199px) {
+    .main{
+        .header{
+        h3{
+            margin-left: 2rem;
+        }
+    }
+    }
+ 
+}
+@media(max-width:991px) {
+    .main{
+        .header{
+            h3{
+                padding-left: 0rem;
+                font-size:1.8rem;
+            }
+        }
+        h1{
+            font-size: 3.7rem;
+        }
+    }
+}
+@media(max-width:767px){
+    .main{
+        .header{
+            .phone{
+                &-link{
+                    a{
+                    font-size: 1.8rem;
+                }
+                }
+            }
+
+            
+        }
+    }
+}
+@media(max-width:576px){
+    .main{
+        text-align: center;
+        &-btn{
+            display: inline-block;
+            text-align: right;
+        }
+        &-img{
+            text-align: center;
+        }
+        .header{
+            h3{
+                
+                padding-top: 2rem;
+            }
+            .phone{
+                &-link{
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
