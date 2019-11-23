@@ -101,13 +101,12 @@ section {
 .main {
     background: url(../img/main/main_bg.jpg) no-repeat center;
     background-size: cover;
-    margin-bottom: 5rem;
 
     .header {
 
         padding-top: 3rem;
         background-color: rgba(0, 0, 0, 0.6);
-        padding-bottom: rem;
+        padding-bottom: 1rem;
 
         h3 {
             padding-left: 2rem;
@@ -168,8 +167,9 @@ section {
 
 //About 
 .about {
-    background-color: green;
+    background-color: @bg_light;
     background-size: cover;
+
     h2 {
         font-family: .black();
         font-variant: small-caps;
@@ -179,6 +179,7 @@ section {
 
     &-description {
         p {
+            font-size: 1.7rem;
             padding-top: 3rem;
             color: @dark;
         }
@@ -186,8 +187,8 @@ section {
 
     img {
         display: inline-block;
-
-        max-width: 50rem;
+        max-width: 100%;
+        height: auto;
     }
 
     &-block {
@@ -201,9 +202,13 @@ section {
         display: table-cell;
         vertical-align: middle;
 
+        h3 {
+            font-weight: 700;
+        }
+
         ul {
             display: inline-block;
-            min-height: 10rem;
+            min-height: 11rem;
             padding-inline-start: 0;
 
             li {
@@ -251,6 +256,10 @@ section {
         }
     }
 
+    .about {
+        text-align: center;
+    }
+
 }
 
 @media(max-width:991px) {
@@ -271,26 +280,86 @@ section {
 @media(max-width:767px) {
     .main {
         .header {
+            padding-bottom: 2rem;
+
+            .logo {
+                &-text {
+                    h3 {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+
             .phone {
+                p {
+                    font-size: 1.8rem;
+                }
+
                 &-link {
+                    text-align: left;
+
                     a {
-                        font-size: 1.8rem;
+                        font-size: 1.6rem;
+                        padding-bottom: 10rem;
                     }
                 }
             }
 
 
         }
+
+
+        &-title {
+            h1 {
+                font-size: 2.8rem;
+            }
+        }
+    }
+
+    .about {
+
+        &-block {
+            text-align: center;
+        }
+
+        &-list {
+            padding-top: 2rem;
+            display: block;
+        }
+
     }
 }
 
+
 @media(max-width:576px) {
     .main {
+
         text-align: center;
+        .header{
+            h3{
+                font-size: 1.2rem;
+            }
+            
+        }
+
+        &-content {
+            h2 {
+                font-size: 2rem;
+            }
+        }
+
+        &-title {
+
+            h1 {
+                padding-top: 3rem;
+                font-size: 2rem;
+            }
+
+        }
 
         &-btn {
             display: inline-block;
-            text-align: right;
+            font-size: 1rem;
         }
 
         &-img {
@@ -309,5 +378,48 @@ section {
                 }
             }
         }
+    }
+
+    .about {
+        h2 {
+            font-size: 2.2rem;
+        }
+
+        &-description {
+            p {
+                font-size: 1.1rem;
+            }
+        }
+
+        &-block {
+
+            span {
+                font-size: 1.3rem;
+
+                strong {
+                    font-size: 1.5rem;
+
+                }
+            }
+        }
+
+        &-list {
+            min-height: 15rem;
+
+            ul {
+                min-height: 100%;
+
+                li {
+                    font-size: 1.1rem;
+                }
+            }
+        }
+           button {
+
+            font-size: 0.9rem;
+        } 
+        
+        
+    
     }
 }
