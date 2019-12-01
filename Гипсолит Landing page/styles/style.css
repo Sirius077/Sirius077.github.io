@@ -27,6 +27,14 @@ body ul {
 section {
   padding: 10rem 0;
 }
+button:focus,
+input:focus,
+textarea:focus,
+button:active,
+input:active,
+textarea:active {
+  outline: none;
+}
 .form {
   background-color: #fff;
   text-align: center;

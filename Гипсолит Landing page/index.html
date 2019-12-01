@@ -16,7 +16,7 @@
 <body>
     <main class="main">
         <div class="container">
-            <div class="header wow fadeIn" data-wow-delay="0.3s">
+            <div class="header wow fadeIn" data-wow-delay="0.2s">
                 <div class="row">
                     <div class=" col-lg-3 col-md-4 col-12">
                         <div class="logo">
@@ -43,7 +43,7 @@
             <div class="main-content">
                 <div class="row">
                     <div class="col-lg-6 col-12">
-                        <div class="main-title wow fadeInLeft">
+                        <div class="main-title wow fadeIn">
                             <h1>
                                 Автоматизированная штукатурка стен
                             </h1>
@@ -57,7 +57,7 @@
                         </div>
                     </div>
                     <div class="col-xl-4 offset-xl-2 col-lg-5 offset-lg-1 col-md-8 offset-md-2 col-12">
-                        <form class="form wow fadeInRight">
+                        <form class="form wow fadeIn">
                             <h2 class="form-header">
                                 Для расчёта точной стоимости <br>закажите <strong>выезд замерщика</strong>
                             </h2>
@@ -478,7 +478,7 @@
                     <div class="media wow fadeIn" data-wow-delay="0.1s">
                         <div class="media-left">
                             <span class="circle-border mr-3">
-                                <span class="circle" >
+                                <span class="circle">
                                     1.
                                 </span>
                             </span>
@@ -621,7 +621,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-5">
-                    <div class="problems-list problems-list_bad wow fadeInLeft">
+                    <div class="problems-list problems-list_bad wow fadeIn">
                         <h4>
                             Какие могут быть проблемы:
                         </h4>
@@ -642,7 +642,7 @@
                     </div>
                 </div>
                 <div class="col-lg-5 offset-lg-2">
-                    <div class="problems-list problems-list_good wow fadeInRight">
+                    <div class="problems-list problems-list_good wow fadeIn">
                         <h4>
                             Наше решение:
                         </h4>
@@ -862,7 +862,7 @@
                             Оставьте контактные данные для связи
                         </h3>
                         <fieldset>
-                            <label class="form-label">Ваше имя</label>
+                            <label class="form-label">Ваше имя </label>
                             <input class="form-input" action="#" type="text">
                             <label class="form-label">Номер телефона</label>
                             <input class="form-input" action="#" id="phone3" type="text">
@@ -893,12 +893,13 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="footer-contacts">
-                    <p>
-                        <strong>
-                            +7 495 771 05 08
-                        </strong></p>
+                        <p>
+                            <strong>
+                                +7 495 771 05 08
+                            </strong></p>
                         <p><a class="contacts-link" href="mailto:order@gipsolit.ru">order@gipsolit.ru</a></p>
-                       <p>Пн-Пт: с 9:00 до 18:00</p> </div>              
+                        <p>Пн-Пт: с 9:00 до 18:00</p>
+                    </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="dev-logo">
@@ -940,10 +941,8 @@
         </div>
     </div>
     <!--Add  jquery-->
-    <script
-    src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-    crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <!--Add  slick-slider-->
     <script src="js/slick.min.js"></script>
 
@@ -954,19 +953,19 @@
     <!--Add wow.js-->
     <script src="js/wow.js"></script>
     <script>
-    new WOW().init();
+        new WOW().init();
     </script>
     <!--Add jquery Mask input-->
     <script src="js/jquery.maskedinput.min.js"></script>
     <script>
-    jQuery(function($){
-   $("#phone").mask("7 (999) 999-9999");
-   $("#phone2").mask("7 (999) 999-9999");
-   $("#phone3").mask("7 (999) 999-9999");
-   $("#phone4").mask("7 (999) 999-9999");
+        jQuery(function ($) {
+            $("#phone").mask("7 (999) 999-9999");
+            $("#phone2").mask("7 (999) 999-9999");
+            $("#phone3").mask("7 (999) 999-9999");
+            $("#phone4").mask("7 (999) 999-9999");
 
-});
-     </script>
+        });
+    </script>
     <!--Initialize slick-slider-->
     <script>
         //Скрипт для появления всплывающего окна
@@ -978,7 +977,11 @@
             $('.popup-close').on('click', function (event) {
                 event.preventDefault();
                 $('.popup').fadeOut();
+                
             });
+            $('.form-button').on('click', function () {
+                                    $('.popup').fadeOut();
+                            });
             //Слайд с отзывами
             $('.feedback-slider').slick({
                 prevArrow: '<button type="button" class="feedback-slider-btn feedback-prev-btn"><img src="img/feedback/prevArrow.svg" alt=Назад></button>',

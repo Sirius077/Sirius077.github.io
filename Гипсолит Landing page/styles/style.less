@@ -58,12 +58,17 @@ body {
 section {
     padding: 10rem 0;
 }
+button,input,textarea{
+    &:focus,&:active{
+        outline:none;
+    }
+}
 
 .form {
     background-color: @light;
     text-align: center;
     padding: 4rem 4.5rem;
-
+  
     &-label {
         font-size: 1.3rem;
         font-weight: bold;
