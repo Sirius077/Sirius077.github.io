@@ -42,22 +42,23 @@ textarea:active {
 }
 .form-label {
   font-size: 1.3rem;
-  font-weight: bold;
   position: absolute;
   left: 50%;
-  transform: translateX(-50%) translateY(80%);
+  transform: translateX(-50%) translateY(-50%);
+  padding: 0.5rem;
+  margin: 0;
   background-color: #fff;
-  color: #565656;
 }
 .form-header {
   font-size: 1.8rem;
+  margin-bottom: 2rem;
 }
 .form-input,
 .form-textarea {
+  display: block;
   font-size: 1.7rem;
-  padding-top: 1.7rem;
-  padding-bottom: 1.7rem;
-  margin-top: 2.5rem;
+  padding: 1.5rem;
+  margin: 2rem 0;
   border: 1px solid #dddddd;
   width: 100%;
   text-align: center;
@@ -558,10 +559,11 @@ footer .dev-logo {
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
   bottom: 0;
+  right: 0;
   width: 100%;
   height: 100%;
+  padding: 4rem 6rem;
   z-index: 9;
   background-color: rgba(0, 0, 0, 0.5);
 }
@@ -569,19 +571,24 @@ footer .dev-logo {
   font-size: 1.8rem;
 }
 .popup p {
+  margin-bottom: 0;
   font-size: 1.5rem;
 }
 .popup-content {
   position: fixed;
   left: 50%;
-  top: 10%;
+  top: 5%;
   background-color: #fff;
   transform: TranslateX(-50%);
-  padding: 1rem 3rem;
+  padding: 3rem 5rem;
   text-align: center;
 }
 .popup-form {
+  margin-top: 4rem;
   padding: 0;
+}
+.popup-form input {
+  margin-top: 0;
 }
 .popup-close {
   position: absolute;
