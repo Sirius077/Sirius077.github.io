@@ -1,0 +1,25 @@
+body {
+  font-size: 10px;
+}
+.logo {
+  font-size: 3rem;
+  color: #5a5a5a;
+  margin-top: 3rem;
+}
+.phone-link {
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-top: 2rem;
+}
+.phone-link a {
+  color: #000;
+  text-decoration: none;
+}
+.callback {
+  font-size: 1rem;
+  text-decoration: underline;
+  margin-top: -1rem;
+}
+.callback a {
+  color: #6c0919;
+}
