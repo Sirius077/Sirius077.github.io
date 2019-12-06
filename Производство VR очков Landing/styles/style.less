@@ -49,7 +49,6 @@
 
 //Colors
 @light: #ffffff;
-@dark: #000000;
 @icons-color: #18a7d0;
 @btn-color: #94ca2d;
 @price-color: #b61919;
@@ -70,20 +69,17 @@ span,
 strong,
 ul {
     font-size: 1.6rem;
+    color:@light
 }
 
 section {
-    &-header {
-        padding-top: 10rem;
-    }
+    margin-top: 10rem;
 
     button {
-        font-size: 1.8rem;
         color: @light;
         background-color: @btn-color;
         border: none;
-        line-height: 5rem;
-        padding-top: 0rem;
+        padding-top: 1rem;
         padding-left: 3rem;
         padding-right: 3rem;
         padding-bottom: 0rem;
@@ -101,30 +97,35 @@ section {
 .main {
     background: url(../img/main/main_bg.jpg) no-repeat center;
     background-size: cover;
+<<<<<<< HEAD
 
+=======
+    margin-bottom: 5rem;
+>>>>>>> parent of 27f96aa... Add About
     .header {
-
+        
         padding-top: 3rem;
         background-color: rgba(0, 0, 0, 0.6);
+<<<<<<< HEAD
         padding-bottom: 1rem;
 
+=======
+        padding-bottom: 2rem;
+        
+>>>>>>> parent of 27f96aa... Add About
         h3 {
             padding-left: 2rem;
             font-size: 2rem;
-            color: @light;
+            color:@light;
         }
 
         .phone {
-            p {
-                color: @light;
-                font-size: 2.5rem;
-                margin-block-start: 0em;
-                margin-block-end: 0em;
+            p{
+            color:@light;
+            font-size: 2.5rem;
             }
-
             &-link {
-                text-align: right;
-
+                text-align:right;
                 a {
                     font-size: 1.6rem;
                     color: @btn-color;
@@ -132,38 +133,24 @@ section {
             }
         }
     }
-
-    &-img {
-        img {
-            max-width: 100%;
-            height: auto;
-            text-align: left;
-        }
+    &-img{
+        img{
+        max-width: 100%;
+        height: auto;
+        text-align: left;}
     }
-
-    &-content {
+    &-content{
         h1 {
+            color: @light;
             font-size: 3.9rem;
             font-weight: 700;
-            color: @light;
-            padding-top: 10rem;
         }
-
-        h2 {
-            font-size: 3rem;
+        h2{
             font-weight: 700;
-            color: @light;
+            color:@light;
         }
-    }
-
-    &-btn {
-        display: block;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-        font-weight: 700;
-        text-transform: uppercase;
-    }
 }
+<<<<<<< HEAD
 
 //About 
 .about {
@@ -223,27 +210,15 @@ section {
         }
 
         span {
+=======
+        &-btn {
+>>>>>>> parent of 27f96aa... Add About
             display: block;
-            font-size: 1.9rem;
-
-            strong {
-                font-size: 2.5rem;
-                color: @price-color;
-                padding-left: 1rem;
-
-            }
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            font-weight: 700;
+            text-transform: uppercase;
         }
-    }
-
-    button {
-        font-size: 1.8rem;
-        line-height: 6rem;
-        text-transform: uppercase;
-        padding-top: 0;
-        margin-top: 3rem;
-        margin-bottom: 6rem;
-        box-shadow: 0 4px 0 #76ae0c;
-    }
 }
 
 //Features
@@ -314,13 +289,13 @@ section {
 
 //Media 
 @media (max-width: 1199px) {
-    .main {
-        .header {
-            h3 {
-                margin-left: 2rem;
-            }
+    .main{
+        .header{
+        h3{
+            margin-left: 2rem;
         }
     }
+<<<<<<< HEAD
 
     .about {
         text-align: center;
@@ -350,18 +325,20 @@ section {
         }
     }
 
+=======
+    }
+ 
+>>>>>>> parent of 27f96aa... Add About
 }
-
 @media(max-width:991px) {
-    .main {
-        .header {
-            h3 {
+    .main{
+        .header{
+            h3{
                 padding-left: 0rem;
-                font-size: 1.8rem;
+                font-size:1.8rem;
             }
         }
-
-        h1 {
+        h1{
             font-size: 3.7rem;
         }
     }
@@ -391,6 +368,7 @@ section {
         }
     }
 }
+<<<<<<< HEAD
 
 @media(max-width:767px) {
     .main {
@@ -417,10 +395,20 @@ section {
                         font-size: 1.6rem;
                         padding-bottom: 10rem;
                     }
+=======
+@media(max-width:767px){
+    .main{
+        .header{
+            .phone{
+                &-link{
+                    a{
+                    font-size: 1.8rem;
+                }
+>>>>>>> parent of 27f96aa... Add About
                 }
             }
 
-
+            
         }
 
 
@@ -471,6 +459,7 @@ section {
         }
     }
 }
+<<<<<<< HEAD
 
 
 @media(max-width:576px) {
@@ -501,27 +490,31 @@ section {
         }
 
         &-btn {
+=======
+@media(max-width:576px){
+    .main{
+        text-align: center;
+        &-btn{
+>>>>>>> parent of 27f96aa... Add About
             display: inline-block;
             font-size: 1rem;
         }
-
-        &-img {
+        &-img{
             text-align: center;
         }
-
-        .header {
-            h3 {
-
+        .header{
+            h3{
+                
                 padding-top: 2rem;
             }
-
-            .phone {
-                &-link {
+            .phone{
+                &-link{
                     text-align: center;
                 }
             }
         }
     }
+<<<<<<< HEAD
 
     .about {
         h2 {
@@ -602,3 +595,6 @@ section {
 
     }
 }
+=======
+}
+>>>>>>> parent of 27f96aa... Add About

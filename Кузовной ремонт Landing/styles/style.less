@@ -1,35 +1,185 @@
 //Colors
-@main-color:#6c0919;
+@main-color: #d91233;
+@light: #fff;
+@logo-color: #5a5a5a;
 
 //Typography
-body{
+html {
     font-size: 10px;
-}
-.logo{
-    font-size: 3rem;
-    color:#5a5a5a;
-    margin-top: 3rem;
+
 }
 
-.phone-link{
-    font-size: 1.7rem;
+.btn {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: @light;
+    border-radius: 2.5rem;
+    border: 2px solid @main-color;
+
+}
+
+.logo {
+    color: black;
+    margin-top: 3rem;
+
+    h3 {
+        font-size: 3rem;
+        color: @logo-color;
+    }
+}
+
+.phone-link {
+    font-size: 2.8rem;
     font-weight: 700;
     margin-top: 2rem;
-    
-    a{
-      color:#000; 
-      text-decoration: none;
+
+    a {
+        color: @light;
+        text-decoration: none;
     }
-    
+
 }
-.callback{
-    font-size: 1rem;
+
+.callback {
+    font-size: 1.6rem;
     text-decoration: underline;
-    margin-top: -1rem;
+    margin-top: -0.5rem;
+
+    a {
+        color: @main-color;
+        &:hover{
+            color:darken(@main-color, 10%)
+        }
+
+        
+    }
+
+}
+
+.main {
+    background: url(../img/main/main-bg.jpg) no-repeat center;
+    background-size: cover;
+    padding-bottom: 13rem;
+    &-title {
+        margin-top: 12rem;
+        text-align: center;
+
+        h1 {
+            color: @light;
+
+            font-size: 4.8rem;
+        }
+
+        span {
+            color: @light;
+            font-size: 3rem;
+        }
+    }
+
+    &-features {
+        margin-top: 11rem;
+
+        &-block {
+            text-align: center;
+
+            img {
+                min-height: 6.5rem;
+                display: block;
+                margin: 0 auto;
+
+            }
+
+            h3 {
+                margin: 0 auto;
+                width: 17rem;
+                font-size: 1.8rem;
+                color: @light;
+                padding-top: 3.5rem;
+            }
+
+        }
+    }
+
+    &-btn {
+        display: inline-block;
+        margin-top: 10rem;
+        cursor: pointer;
+        &-subtitle{             
+            display: inline-block;
+            font-size: 1.6rem;
+            color:@light;
+            text-align: center;
+            padding-top: 2rem;
+        }
+        
+        &-fast {
+            padding: 1.5rem 5.5rem;   
+        }
+
+        &-detailed {
+            padding: 1.5rem 4.3rem;
+        }
+
+        &:hover {
+            background-color: @main-color;
+            color: @light;
+        }
+    }
+}
+
+//Media queries
+@media (max-width:1199px){
+    .main{
+        &-btn {
+            cursor: pointer;
+            &-fast {
+                padding: 1.5rem 3rem;
+            }
     
-    a{
-        color:@main-color;
+            &-detailed {
+                padding: 1.5rem 2.1rem;
+            }
+        }
+    }
+}
+
+@media (max-width:991px){
+
+}
+
+@media (max-width:767px){
+    
+    
+    .main{
+        &-title{
+    
+            margin-top: 6rem;
+            h1{
+            font-size: 3.5rem;
+        }
+        span{
+            font-size: 2.5rem;
+        }
+        }
+        
+        &-features{
+            margin-top: 7rem;
+            &-block{
+                margin-top: 3rem;
+                margin-bottom: 3rem;
+            }
+        }
+        &-btn{
+            margin-top: 5rem;
+        }
     }
     
 }
 
+@media (max-width:576px){
+    .main{
+        h1{
+            font-size: 3rem;
+        }
+    }
+}

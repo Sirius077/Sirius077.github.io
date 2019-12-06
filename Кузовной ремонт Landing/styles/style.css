@@ -1,25 +1,132 @@
-body {
+html {
   font-size: 10px;
 }
+.btn {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 2.5rem;
+  border: 2px solid #d91233;
+}
 .logo {
-  font-size: 3rem;
-  color: #5a5a5a;
+  color: black;
   margin-top: 3rem;
 }
+.logo h3 {
+  font-size: 3rem;
+  color: #5a5a5a;
+}
 .phone-link {
-  font-size: 1.7rem;
+  font-size: 2.8rem;
   font-weight: 700;
   margin-top: 2rem;
 }
 .phone-link a {
-  color: #000;
+  color: #fff;
   text-decoration: none;
 }
 .callback {
-  font-size: 1rem;
+  font-size: 1.6rem;
   text-decoration: underline;
-  margin-top: -1rem;
+  margin-top: -0.5rem;
 }
 .callback a {
-  color: #6c0919;
+  color: #d91233;
+}
+.callback a:hover {
+  color: #aa0e28;
+}
+.main {
+  background: url(../img/main/main-bg.jpg) no-repeat center;
+  background-size: cover;
+  padding-bottom: 13rem;
+}
+.main-title {
+  margin-top: 12rem;
+  text-align: center;
+}
+.main-title h1 {
+  color: #fff;
+  font-size: 4.8rem;
+}
+.main-title span {
+  color: #fff;
+  font-size: 3rem;
+}
+.main-features {
+  margin-top: 11rem;
+}
+.main-features-block {
+  text-align: center;
+}
+.main-features-block img {
+  min-height: 6.5rem;
+  display: block;
+  margin: 0 auto;
+}
+.main-features-block h3 {
+  margin: 0 auto;
+  width: 17rem;
+  font-size: 1.8rem;
+  color: #fff;
+  padding-top: 3.5rem;
+}
+.main-btn {
+  display: inline-block;
+  margin-top: 10rem;
+  cursor: pointer;
+}
+.main-btn-subtitle {
+  display: inline-block;
+  font-size: 1.6rem;
+  color: #fff;
+  text-align: center;
+  padding-top: 2rem;
+}
+.main-btn-fast {
+  padding: 1.5rem 5.5rem;
+}
+.main-btn-detailed {
+  padding: 1.5rem 4.3rem;
+}
+.main-btn:hover {
+  background-color: #d91233;
+  color: #fff;
+}
+@media (max-width: 1199px) {
+  .main-btn {
+    cursor: pointer;
+  }
+  .main-btn-fast {
+    padding: 1.5rem 3rem;
+  }
+  .main-btn-detailed {
+    padding: 1.5rem 2.1rem;
+  }
+}
+@media (max-width: 767px) {
+  .main-title {
+    margin-top: 6rem;
+  }
+  .main-title h1 {
+    font-size: 3.5rem;
+  }
+  .main-title span {
+    font-size: 2.5rem;
+  }
+  .main-features {
+    margin-top: 7rem;
+  }
+  .main-features-block {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .main-btn {
+    margin-top: 5rem;
+  }
+}
+@media (max-width: 576px) {
+  .main h1 {
+    font-size: 3rem;
+  }
 }
