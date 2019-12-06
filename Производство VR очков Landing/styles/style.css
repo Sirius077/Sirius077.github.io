@@ -56,7 +56,11 @@ section button:hover {
   padding-top: 3rem;
   background-color: rgba(0, 0, 0, 0.6);
 <<<<<<< HEAD
+<<<<<<< HEAD
   padding-bottom: 1rem;
+=======
+  padding-bottom: 2rem;
+>>>>>>> parent of 27f96aa... Add About
 =======
   padding-bottom: 2rem;
 >>>>>>> parent of 27f96aa... Add About
@@ -98,6 +102,7 @@ section button:hover {
   font-weight: 700;
   text-transform: uppercase;
 }
+<<<<<<< HEAD
 <<<<<<< HEAD
 .about {
   background-color: #f8f8f0;
@@ -211,6 +216,8 @@ section button:hover {
   top: 50%;
   transform: translateY(-50%);
 }
+=======
+>>>>>>> parent of 27f96aa... Add About
 =======
 >>>>>>> parent of 27f96aa... Add About
 @media (max-width: 1199px) {
