@@ -1,6 +1,9 @@
 html {
   font-size: 10px;
 }
+section {
+  margin-top: 8rem;
+}
 .btn {
   font-size: 1.8rem;
   font-weight: 700;
@@ -92,6 +95,20 @@ html {
 .main-btn:hover {
   background-color: #d91233;
   color: #fff;
+}
+.features {
+  margin: 3rem;
+}
+.features-block {
+  margin-top: 8rem;
+}
+.features-block h3 {
+  font-size: 1.7rem;
+  font-weight: 700;
+  padding: 3rem 0 2rem;
+}
+.features-block p {
+  font-size: 1.4rem;
 }
 @media (max-width: 1199px) {
   .main-btn {
