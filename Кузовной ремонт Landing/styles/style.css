@@ -1,8 +1,11 @@
 html {
   font-size: 10px;
 }
-section {
+.section-header h2 {
   margin-top: 8rem;
+  font-size: 3rem;
+  font-weight: 700;
+  padding-bottom: 2rem;
 }
 .btn {
   font-size: 1.8rem;
@@ -110,7 +113,13 @@ section {
 .features-block p {
   font-size: 1.4rem;
 }
-@media (max-width: 1199px) {
+.details {
+  padding-bottom: 5rem;
+}
+.details h2 {
+  padding-bottom: 6rem;
+}
+@media (max-width: 1190px) {
   .main-btn {
     cursor: pointer;
   }
