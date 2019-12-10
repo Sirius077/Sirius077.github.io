@@ -4,7 +4,7 @@
 @logo-color: #5a5a5a;
 @bg-color: #ebebeb;
 @form-bg: #dbdbdb;
-
+@name-color: #757575;
 //Typography
 html {
     font-size: 10px;
@@ -13,7 +13,7 @@ html {
 
 .section-header {
     h2 {
-        margin-top: 8rem;
+        padding-top: 8rem;
         font-size: 3rem;
         font-weight: 700;
         padding-bottom: 2rem;
@@ -171,6 +171,65 @@ html {
     }
 }
 
+//Review
+.review{
+    background: @bg-color;
+    h2{
+        padding-bottom: 6rem;
+    }
+    padding-bottom: 2rem;
+    &-slider{
+        &-block{
+            display:flex;
+            margin-bottom: 6rem;
+            span{
+                font-size: 1.2rem;
+                color:@name-color;
+            }
+            h5{
+                margin: 1.2rem 0;
+                font-size: 1.6rem;
+                font-weight: 700;
+                color:@main-color;
+            }
+            p{
+                font-size: 1.3rem;
+                font-weight: 700;
+                max-width: 33.4rem;
+            }
+            img{
+                border-radius: 5rem;
+                max-height: 9rem;
+            }
+        }
+    }
+    .arrow {
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 99;
+        width: 2rem;
+        height: 2rem;
+        border: none;
+    
+    }
+
+        .prev {
+        position: absolute;
+        left: -10%;
+        background: url(../img/review/prevArrow.svg) center no-repeat;
+        background-size: 70%;
+    }
+    
+    .next {
+        position: absolute;
+        right: -10%;
+        background: url(../img/review/nextArrow.svg) center no-repeat;
+        background-size: 70%;
+        padding:0;
+    }
+    
+}
+
 //Media queries
 @media (max-width:1190px) {
     .main {
@@ -188,7 +247,24 @@ html {
     }
 }
 
-@media (max-width:991px) {}
+@media (max-width:991px) {
+    .review{
+        &-slider{
+            &-block{
+            p{
+                max-width:100%;
+            }
+
+            }
+        }
+        .prev{
+            left:-5%;
+        }
+        .next{
+            right:0;
+        }
+    }
+}
 
 @media (max-width:767px) {
 
@@ -220,7 +296,24 @@ html {
             margin-top: 5rem;
         }
     }
+    .review{
+        .prev {
+        position: absolute;
+        left: -5%;
+        background: url(../img/review/prevArrow.svg) center no-repeat;
+        background-size: 70%;
+    }
+    
+    .next {
+        position: absolute;
+        right: -5%;
+        background: url(../img/review/nextArrow.svg) center no-repeat;
+        background-size: 70%;
+        padding:0;
+    }
 
+    }
+    
 }
 
 @media (max-width:576px) {
@@ -228,5 +321,37 @@ html {
         h1 {
             font-size: 3rem;
         }
+    }
+
+    .review{
+        .arrow {
+            top: 45%;
+            transform: translateY(-50%);
+            z-index: 99;
+            width: 2rem;
+            height: 2rem;
+            border: none;
+        
+        }
+        .prev {
+        position: absolute;
+        top:47%;
+        left: 0%;
+        background: url(../img/review/prevArrow.svg) center no-repeat;
+        background-size: 70%;
+    }
+    
+    .next {
+        position: absolute;
+        right: -3%;
+        background: url(../img/review/nextArrow.svg) center no-repeat;
+        background-size: 70%;
+        padding:0;
+    }
+    p{
+        font-size: 1.1rem;
+        max-width:40rem;
+    }
+
     }
 }
