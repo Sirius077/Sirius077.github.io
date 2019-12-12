@@ -5,7 +5,7 @@
 @bg-color: #ebebeb;
 @consultation-bg: #dbdbdb;
 @name-color: #757575;
-
+@border-color: #d0d0d0;
 //Typography
 html {
     font-size: 10px;
@@ -32,6 +32,25 @@ body {
     border-radius: 2.5rem;
     border: 2px solid @main-color;
 
+}
+.main-btn{
+    button{
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        width: 100%;
+        border-radius: 2.5rem;
+        border: none;
+        background: @main-color;
+        color: @light;
+        margin-top: 4rem;
+
+        &:hover {
+            background: darken(@main-color, 10%);
+        }
+    }
 }
 
 .logo {
@@ -282,8 +301,9 @@ body {
             background: @main-color;
             color: @light;
             margin-top: 4rem;
-            &:hover{
-                background: darken(@main-color,10%);
+
+            &:hover {
+                background: darken(@main-color, 10%);
             }
         }
     }
@@ -291,19 +311,20 @@ body {
 
 //Contacts
 .contacts {
-    #map {    
+    #map {
         height: 100%;
         width: 100%;
     }
 
     &-block {
         position: absolute;
-        top:-50rem;
+        top: -50rem;
         font-size: 2rem;
         line-height: 3rem;
         background: @main-color;
         color: @light;
         padding: 6rem 6rem;
+
         h3 {
             font-size: 2.4rem;
             font-weight: 700;
@@ -321,12 +342,100 @@ body {
 }
 
 //Footer
-.footer{
-    &-phone{
-        a{
-        color:black;
+.footer {
+    &-phone {
+        a {
+            color: black;
         }
     }
+}
+
+//Modals
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    padding: 4rem 6rem;
+    z-index: 9;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    &-content {
+        position: fixed;
+        left: 50%;
+        top: 5%;
+        background-color: @light;
+        transform: TranslateX(-50%);
+        padding: 3rem 5rem;
+        text-align: center;
+    }
+
+    h4 {
+        font-size: 1.4rem;
+        font-weight: 700;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    &-close {
+        background: transparent;
+        border: none;
+        color: @main-color;
+        font-size: 3.5rem;
+        position: absolute;
+        top: -1.5rem;
+        right: -2rem;
+        width: 2rem;
+        border: none;
+        background-color: transparent;
+        text-align: center;
+        outline: none;
+    }
+
+    &-input {
+        display: block;
+        margin: 0 auto;
+        margin-top: 1rem;
+        font-size: 1.2rem;
+        padding: 1rem;
+        width: 100%;
+        border: 0.1rem solid @border-color;
+        &-name{
+            background: url(../img/popup/user.png) no-repeat right 2rem top 1.2rem;
+        }
+        &-phone{
+            background: url(../img/popup/phone.png) no-repeat right 2rem top 1.2rem;
+        }
+        &-mail{
+            background: url(../img/popup/mail.png) no-repeat right 2rem top 1.2rem;
+        }
+    }
+   
+    &-button {
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        width: 100%;
+        border-radius: 2.5rem;
+        border: none;
+        background: @main-color;
+        color: @light;
+        margin-top: 1.5rem;
+
+        &:hover {
+            background: darken(@main-color, 10%);
+        }
+    
+   }
+
 }
 
 //Media queries
@@ -344,9 +453,10 @@ body {
             }
         }
     }
-    .contacts{
-        &-block{
-            left:28%
+
+    .contacts {
+        &-block {
+            left: 28%
         }
     }
 }
@@ -370,9 +480,10 @@ body {
             right: 0;
         }
     }
-    .contacts{
-        &-block{
-            left:23%
+
+    .contacts {
+        &-block {
+            left: 23%
         }
     }
 }
@@ -425,10 +536,10 @@ body {
         }
 
     }
-   
-    .contacts{
-        &-block{
-            left:15%
+
+    .contacts {
+        &-block {
+            left: 15%
         }
     }
 
@@ -474,21 +585,33 @@ body {
         }
 
     }
-    .consultation{
-        &-form{
-            label{
-                display:block;
+
+    .consultation {
+        &-form {
+            label {
+                display: block;
                 margin-top: 2rem;
             }
-            input{
-                height:60%;
+
+            input {
+                height: 60%;
             }
         }
     }
-    .contacts{
-        &-block{
+
+    .contacts {
+        &-block {
             transform: translateX(-50%);
-            left:50%;
+            left: 50%;
+        }
+    }
+    .popup{
+        &-content{
+            padding:1rem 3rem;
+        }
+        &-button{
+            font-size: 1.2rem;
+
         }
     }
 }
