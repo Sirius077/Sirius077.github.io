@@ -40,11 +40,11 @@ $(function () {
     $('.popup').fadeOut();
 
   });
-  $('.popup-callback-form> form').on('submit', function () {
+  $('button.popup-button').on('click', function () {
     $('.popup-thanks').fadeIn(),
       $('.popup-callback').fadeOut();
   });
-  $('.popup-fast-request-btn').on('click', function (event) {
+  $('.popup-fast-request-btn').on('click', function () {
     event.preventDefault();
     $('.popup-request').fadeIn();
 
@@ -53,14 +53,27 @@ $(function () {
     $('.popup-thanks').fadeIn(),
       $('.popup-request').fadeOut();
   });
-  $('.popup-detailed-request-btn').on('click', function (event) {
+  $('.popup-detailed-request-btn').on('click', function () {
     event.preventDefault();
     $('.popup-thanks').fadeIn();
 
   });
-  $('.popup-consultation-btn').on('click', function (event) {
+  $('.popup-consultation-btn').on('click', function () {
     event.preventDefault();
     $('.popup-thanks').fadeIn();
-
+    
+  });
+  $('form').submit(function(event) {
+    event.preventDefault();
+    $.ajax({
+      type: "POST",
+      url: "php/smart.php",
+      data: $(this).serialize()
+    }).done(function() {
+      $(this).find("input").val("");
+      alert("Сообщение успешно отправлено");
+      $("form").trigger("reset");
+    });
+    return false;
   });
 });

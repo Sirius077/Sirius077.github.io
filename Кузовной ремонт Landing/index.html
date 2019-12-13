@@ -257,16 +257,16 @@
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
                     <div class="consultation-form">
-                        <form action="">
+                        <form action="php/smart.php" method="POST">
                             <div class="row">
                                 <div class="col-lg-5 offset-lg-1 col-md-5 offset-md-1 col-sm-6 col-12">
                                     <label for="">Ваше имя:</label>
-                                    <input type="text" required>
+                                    <input type="text" name="user_name" >
                                 </div>
 
                                 <div class="col-lg-5 col-md-5 col-sm-6 col-12">
                                     <label for="">Ваш email:</label>
-                                    <input type="email" required>
+                                    <input type="email" name="user_mail" >
                                 </div>
                             </div>
                             <div class="row">
@@ -356,8 +356,7 @@
                                 required>
                             <input class="popup-input popup-input-phone" action="#" id="phone" type="text"
                                 placeholder="Ваш телефон" required>
-                            <input class="popup-input popup-input-mail" action="#" type="email" placeholder="Ваша почта"
-                                required>
+                            <input class="popup-input popup-input-mail" action="#" type="email" placeholder="Ваша почта">
                             <button class="popup-button" action="#" type="submit">
                                 Отправить заявку
                             </button>

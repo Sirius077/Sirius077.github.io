@@ -1,8 +1,17 @@
+*:focus {
+  outline: 1px solid #d91233;
+}
+button:focus {
+  outline: 1px solid #d91233;
+}
 html {
   font-size: 10px;
 }
 body {
   height: 100%;
+}
+body:focus {
+  outline: none;
 }
 .section-header h2 {
   padding-top: 8rem;
@@ -400,6 +409,9 @@ body {
   .main h1 {
     font-size: 3rem;
   }
+  .main .phone-link {
+    font-size: 2.6rem;
+  }
   .review .arrow {
     top: 45%;
     transform: translateY(-50%);
@@ -441,6 +453,15 @@ body {
     padding: 1rem 3rem;
   }
   .popup-button {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+  }
+  .popup-input-name {
+    background: url(../img/popup/user.png) no-repeat right 1rem top 1.2rem;
+  }
+  .popup-input-phone {
+    background: url(../img/popup/phone.png) no-repeat right 1rem top 1.2rem;
+  }
+  .popup-input-mail {
+    background: url(../img/popup/mail.png) no-repeat right 1rem top 1.2rem;
   }
 }
