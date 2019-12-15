@@ -57,14 +57,14 @@
                         </div>
                     </div>
                     <div class="col-xl-4 offset-xl-2 col-lg-5 offset-lg-1 col-md-8 offset-md-2 col-12">
-                        <form class="form wow fadeIn">
+                        <form action="php/smart.php" method="POST" class="form wow fadeIn">
                             <h2 class="form-header">
                                 Для расчёта точной стоимости <br>закажите <strong>выезд замерщика</strong>
                             </h2>
                                 <label class="form-header-label">Ваше имя</label>
-                                <input class="form-input" action="#" type="text">
+                                <input class="form-input" action="#" type="text" name="user_name">
                                 <label class="form-label">Номер телефона</label>
-                                <input class="form-input" action="#" id="phone" type="text">
+                                <input class="form-input" action="#" id="phone" type="text" name="user_phone">
                                 <button class="form-button button" action="#" type="submit">
                                     Оставьте заявку
                                 </button>
@@ -360,16 +360,16 @@
                         </h3>
                     </div>
 
-                    <form action="#" class='form'>
+                    <form action="php/smart.php" method="POST" class='form'>
                         <div class="row">
                             <div class="col-lg-6 col-12">
                                 <label class="form-label feedback-label">Ваше имя</label>
-                                <input class="form-input" action="#" type="text">
+                                <input class="form-input" action="#" type="text" name="user_name">
 
                             </div>
                             <div class="col-lg-6">
                                 <label class="form-label feedback-label">Номер телефона</label>
-                                <input class="form-input" action="#" type="text">
+                                <input class="form-input" action="#" type="text" name="user_phone">
                             </div>
                         </div>
                         <button class="form-button feedback-btn button" action="#" type="submit">
@@ -757,15 +757,15 @@
                         </div>
                     </div>
                     <div class="col-xl-4 offset-xl-2 col-lg-5 offset-lg-1 col-md-8 offset-md-2 col-12">
-                        <form class="form wow fadeIn" data-wow-delay="0.2s">
+                        <form action="php/smart.php" method="POST" class="form wow fadeIn" data-wow-delay="0.2s" >
                             <h2 class="form-header">
                                 Оставьте контактные данные для связи
                             </h2>
                             <fieldset>
                                 <label class="form-label">Ваше имя</label>
-                                <input class="form-input" action="#" type="text">
+                                <input class="form-input" action="#" type="text" name="user_name">
                                 <label class="form-label">Номер телефона</label>
-                                <input class="form-input" action="#" id="phone2" type="text">
+                                <input class="form-input" action="#" id="phone2" type="text" name="user_phone">
                                 <button class="form-button button" action="#" type="submit">
                                     Записаться на просмотр
                                 </button>
@@ -851,7 +851,7 @@
                     </p>
                 </div>
                 <div class="col-xl-4 offset-xl-2 col-lg-5 offset-lg-1 col-md-6 offset-md-3">
-                    <form class="form wow fadeIn" data-wow-delay="0.4s">
+                    <form action="php/smart.php" method="POST" class="form wow fadeIn" data-wow-delay="0.4s">
                         <h3 class="form-header">
                             Оставьте контактные данные для связи
                         </h3>
@@ -918,15 +918,15 @@
                     Заинтересовало?
                 </h4>
                 <p>Оставьте контактные данные <br>для связи</p>
-                <div class=" popup-form">
-                    <form action="#">
+                <div class="popup-form">
+                    <form action="php/smart.php" method="POST">
                         <fieldset>
                             <label class="popup-form-label">Ваше имя</label>
-                            <input class="form-input" action="#" type="text">
+                            <input class="form-input" action="#" type="text" name="user_name">
                             <label class="form-label">Номер телефона</label>
-                            <input class="form-input" action="#" id="phone" type="text">
+                            <input class="form-input" action="#" id="phone" type="text" name="user_phone">
                             <label class="form-label" for="#">Сообшение</label>
-                            <textarea class="form-input" rows="5"></textarea>
+                            <textarea class="form-input" rows="5" name="user_comment"></textarea>
                             <button class="form-button button" action="#" type="submit">
                                 Оставьте заявку
                             </button>
@@ -936,6 +936,18 @@
             </div>
         </div>
     </div>
+    <!--Получить консультацию-->
+    <div class="popup-thanks">
+        <!--Само(белое)Модальное окно-->
+        <div class="popup-dialog">
+            <!--Содержимое модального окна-->
+            <div class="popup-content">
+                <button class="popup-close">&times;</button>
+                <!--Заголовок окна -->
+                <h4 class="popup-header">
+                    Спасибо
+                </h4>
+                <p>Спасибо что оставили контактные данные <br>Ответим вам в ближайшее время</p>
     <!--Add  jquery-->
     <script
     src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -950,70 +962,8 @@
 
     <!--Add wow.js-->
     <script src="js/wow.js"></script>
-    <script>
-        new WOW().init();
-    </script>
     <!--Add jquery Mask input-->
     <script src="js/jquery.maskedinput.min.js"></script>
-    <script>
-        jQuery(function ($) {
-            $("#phone").mask("7 (999) 999-9999");
-            $("#phone2").mask("7 (999) 999-9999");
-            $("#phone3").mask("7 (999) 999-9999");
-            $("#phone4").mask("7 (999) 999-9999");
-
-        });
-    </script>
-    <!--Initialize slick-slider-->
-    <script>
-        //Скрипт для появления всплывающего окна
-        $(document).ready(function () {
-            $('.popup-btn').on('click', function (event) {
-                event.preventDefault();
-                $('.popup').fadeIn();
-            });
-            $('.popup-close').on('click', function (event) {
-                event.preventDefault();
-                $('.popup').fadeOut();
-                
-            });
-            $('.form-button').on('click', function () {
-                                    $('.popup').fadeOut();
-                            });
-            //Слайд с отзывами
-            $('.feedback-slider').slick({
-                prevArrow: '<button type="button" class="feedback-slider-btn feedback-prev-btn"><img src="img/feedback/prevArrow.svg" alt=Назад></button>',
-                nextArrow: '<button type="button" class="feedback-slider-btn feedback-next-btn"><img src="img/feedback/nextArrow.svg" alt="Вперед"></button>'
-
-            });
-            //Слайд с преимуществами и материалами
-            $('.features-materials-slider').slick({
-                infinite: true,
-                slidesToShow: 4,
-                slidesToScroll: 1,
-                responsive: [{
-                        breakpoint: 991,
-                        settings: {
-                            slidesToShow: 2,
-                            prevArrow: "<button class='prev arrow'></button>",
-                            nextArrow: "<button class='next arrow'></button>",
-                            slidesToScroll: 2
-                        }
-                    },
-                    {
-                        breakpoint: 767,
-                        settings: {
-                            slidesToShow: 1,
-                            prevArrow: "<button class='prev arrow'></button>",
-                            nextArrow: "<button class='next arrow'></button>",
-                            slidesToScroll: 1
-                        }
-                    }
-                ]
-            });
-        })
-    </script>
-
 </body>
 
 </html>
