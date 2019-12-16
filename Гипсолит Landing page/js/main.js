@@ -5,7 +5,7 @@ $(function () {
     $("#phone2").mask("7 (999) 999-9999");
     $("#phone3").mask("7 (999) 999-9999");
     $("#phone4").mask("7 (999) 999-9999");
-
+    $("#phone5").mask("7 (999) 999-9999");
     //Скрипт для появления всплывающего окна
     $('.popup-btn').on('click', function (event) {
         event.preventDefault();

@@ -1,8 +1,8 @@
 <?php 
 
 $name = $_POST['user_name'];
+$email = $_POST['user_mail'];
 $phone = $_POST['user_phone'];
-
 require_once('phpmailer/PHPMailerAutoload.php');
 $mail = new PHPMailer;
 $mail->CharSet = 'utf-8';
@@ -31,6 +31,15 @@ $mail->Subject = 'Ползователь оставил данные для ко
 $mail->Body    = '
 	Пользователь оставил свои данные <br> 
 	Имя: ' . $name . ' <br>
+	Email: ' . $email . ' <br>
 	Телефон: ' . $phone . '';
+	
 $mail->AltBody = '';
 
+if(!$mail->send()) {
+    return false;
+} else {
+    return true;
+}
+
+?> 
