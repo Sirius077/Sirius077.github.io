@@ -37,7 +37,7 @@
 @bg-color: #0b3554;
 @header-bg-color: #191919;
 @btn-color: #1866af;
-
+@dark: #000;
 @light: #fff;
 
 html {
@@ -51,6 +51,14 @@ body {
 .section {
     &-header {
         padding-top: 10rem;
+
+        h2 {
+            font-size: 3rem;
+        }
+
+        span {
+            font-size: 2rem;
+        }
     }
 
 }
@@ -62,6 +70,10 @@ form {
         width: 100%;
         padding: 2rem;
         border: none;
+
+        &::placeholder {
+            font-size: 1.2rem;
+        }
     }
 
     .mail-input {
@@ -194,15 +206,18 @@ button {
     background-color: @all-inclusive-bg-color;
     color: @light;
 
-    h2{
+    h2 {
         .black();
         font-size: 3.6rem;
     }
-    span{
+
+    span {
         font-size: 2rem;
     }
+
     &-block {
         color: @light;
+        padding-bottom: 10rem;
 
         img {
             max-height: 6.5rem;
@@ -217,6 +232,103 @@ button {
     }
 }
 
+.items {
+    background: url(../img/items/items-bg.jpg) no-repeat center;
+    background-size: cover;
+
+    &-header {
+        padding-bottom: 6rem;
+        color: @light;
+    }
+
+    &-form {
+        button {
+            font-size: 1.7rem;
+            font-weight: 700;
+            background: @main-color;
+            width: 100%;
+            margin-bottom: 6rem;
+
+            &:hover {
+                background: darken(@main-color, 10%);
+            }
+        }
+    }
+
+    &-subtitle {
+        p {
+            font-size: 1.4rem;
+            color: @light;
+
+            &:last-of-type {
+                .black();
+                font-size: 3rem;
+                padding-bottom: 10rem;
+            }
+        }
+    }
+}
+
+//Delivery
+.delivery {
+    &-header {
+        h2 {
+            .black();
+            font-size: 3.6rem;
+        }
+    }
+
+    &-features {
+        &-block {
+            p {
+                font-size: 1.8rem;
+                padding-top: 5rem;
+                padding-bottom: 3rem;
+            }
+
+            img {
+                padding-top: 10rem;
+                margin: 0 auto;
+            }
+
+            a {
+                font-size: 1.7rem;
+                font-weight: 700;
+                color: @dark;
+                text-decoration: underline;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+
+            
+        }
+    }
+    .arrow {
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 99;
+        width: 2rem;
+        height: 2rem;
+        border: none;
+    
+    }
+    .prev {
+                position: absolute;
+                left: 0%;
+                background: url(../img/delivery/prevArrow.svg) center no-repeat;
+                background-size: 100%;
+            }
+
+            .next {
+                position: absolute;
+                right: 0%;
+                background: url(../img/delivery/nextArrow.svg) center no-repeat;
+                background-size: 100%;
+            }
+
+}
 
 //Media
 @media (max-width:991px) {
@@ -242,20 +354,29 @@ button {
     .prices {
         &-form {
             margin-bottom: 8rem;
+
             input {
                 font-size: 1.2rem;
+
+                &::placeholder {
+                    font-size: 1rem;
+                }
             }
         }
     }
 
-    .all-inclusive{
-        &-block{
-            span{
+    .all-inclusive {
+        &-block {
+            span {
                 font-size: 1.3rem;
             }
         }
     }
 }
+
+
+
+
 
 @media (max-width:767px) {
     button {
@@ -272,6 +393,21 @@ button {
                 margin-top: 2rem;
             }
         }
+    }
+
+    .all-inclusive {
+        &-block {
+            padding-bottom: 2rem;
+        }
+    }
+
+    .items {
+        &-form {
+            input {
+                margin-bottom: 2rem;
+            }
+        }
+
     }
 }
 
@@ -293,6 +429,15 @@ button {
                     font-size: 1.5rem;
                 }
             }
+        }
+    }
+
+    .items {
+        &-header {
+            span {
+                font-size: 1.3rem;
+            }
+
         }
     }
 }

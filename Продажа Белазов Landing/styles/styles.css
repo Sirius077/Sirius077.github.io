@@ -21,12 +21,21 @@ body {
 .section-header {
   padding-top: 10rem;
 }
+.section-header h2 {
+  font-size: 3rem;
+}
+.section-header span {
+  font-size: 2rem;
+}
 form input {
   background-color: #f2f2f2;
   font-size: 1.6rem;
   width: 100%;
   padding: 2rem;
   border: none;
+}
+form input::placeholder {
+  font-size: 1.2rem;
 }
 form .mail-input {
   background: #f2f2f2 url(../img/prices/envelope.png) no-repeat center right 2rem;
@@ -133,6 +142,7 @@ button:hover {
 }
 .all-inclusive-block {
   color: #fff;
+  padding-bottom: 10rem;
 }
 .all-inclusive-block img {
   max-height: 6.5rem;
@@ -142,6 +152,75 @@ button:hover {
 .all-inclusive-block span {
   display: block;
   font-size: 1.8rem;
+}
+.items {
+  background: url(../img/items/items-bg.jpg) no-repeat center;
+  background-size: cover;
+}
+.items-header {
+  padding-bottom: 6rem;
+  color: #fff;
+}
+.items-form button {
+  font-size: 1.7rem;
+  font-weight: 700;
+  background: #f7b516;
+  width: 100%;
+  margin-bottom: 6rem;
+}
+.items-form button:hover {
+  background: #d39707;
+}
+.items-subtitle p {
+  font-size: 1.4rem;
+  color: #fff;
+}
+.items-subtitle p:last-of-type {
+  font-family: 'ProximaNova-Black', sans-serif;
+  font-size: 3rem;
+  padding-bottom: 10rem;
+}
+.delivery-header h2 {
+  font-family: 'ProximaNova-Black', sans-serif;
+  font-size: 3.6rem;
+}
+.delivery-features-block p {
+  font-size: 1.8rem;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+}
+.delivery-features-block img {
+  padding-top: 10rem;
+  margin: 0 auto;
+}
+.delivery-features-block a {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #000;
+  text-decoration: underline;
+}
+.delivery-features-block a:hover {
+  text-decoration: none;
+}
+.delivery .arrow {
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 99;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+}
+.delivery .prev {
+  position: absolute;
+  left: 0%;
+  background: url(../img/delivery/prevArrow.svg) center no-repeat;
+  background-size: 100%;
+}
+.delivery .next {
+  position: absolute;
+  right: 0%;
+  background: url(../img/delivery/nextArrow.svg) center no-repeat;
+  background-size: 100%;
 }
 @media (max-width: 991px) {
   button {
@@ -164,6 +243,9 @@ button:hover {
   .prices-form input {
     font-size: 1.2rem;
   }
+  .prices-form input::placeholder {
+    font-size: 1rem;
+  }
   .all-inclusive-block span {
     font-size: 1.3rem;
   }
@@ -178,6 +260,12 @@ button:hover {
   .prices-form button {
     margin-top: 2rem;
   }
+  .all-inclusive-block {
+    padding-bottom: 2rem;
+  }
+  .items-form input {
+    margin-bottom: 2rem;
+  }
 }
 @media (max-width: 576px) {
   .main-content h1 {
@@ -188,6 +276,9 @@ button:hover {
   }
   .main-features-block p {
     font-size: 1.5rem;
+  }
+  .items-header span {
+    font-size: 1.3rem;
   }
 }
 @media (max-width: 478px) {
