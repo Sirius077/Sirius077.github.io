@@ -18,8 +18,21 @@ html {
 body {
   font-family: 'ProximaNova-Regular', sans-serif;
 }
-section-header {
+.section-header {
   padding-top: 10rem;
+}
+form input {
+  background-color: #f2f2f2;
+  font-size: 1.6rem;
+  width: 100%;
+  padding: 2rem;
+  border: none;
+}
+form .mail-input {
+  background: #f2f2f2 url(../img/prices/envelope.png) no-repeat center right 2rem;
+}
+form .phone-input {
+  background: #f2f2f2 url(../img/prices/phone.png) no-repeat center right 2rem;
 }
 button {
   font-size: 1.2rem;
@@ -31,6 +44,9 @@ button {
   background-color: #1866af;
   border: none;
   text-transform: uppercase;
+}
+button:hover {
+  background: #124c82;
 }
 .main .header {
   padding-top: 2rem;
@@ -83,6 +99,27 @@ button {
 .main-features-block:last-of-type {
   padding-bottom: 0;
 }
+.prices {
+  background: url(../img/prices/prices-bg.jpg) no-repeat center;
+}
+.prices h2 {
+  font-family: 'ProximaNova-Black', sans-serif;
+  font-size: 3rem;
+}
+.prices span {
+  font-size: 1.4rem;
+}
+.prices-form {
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+}
+.prices input {
+  margin-bottom: 3rem;
+}
+.prices .button {
+  font-size: 1.7rem;
+  width: 100%;
+}
 @media (max-width: 991px) {
   button {
     padding-left: 1rem;
@@ -98,10 +135,19 @@ button {
   .main .header .phone-number {
     font-size: 1.5rem;
   }
+  .prices-form input {
+    font-size: 1.2rem;
+  }
 }
 @media (max-width: 767px) {
   button {
     width: 50%;
+  }
+  .prices-form img {
+    display: none;
+  }
+  .prices-form button {
+    margin-top: 2rem;
   }
 }
 @media (max-width: 576px) {
@@ -118,5 +164,8 @@ button {
 @media (max-width: 478px) {
   .main-content {
     padding: 1rem 3rem 8rem 2rem;
+  }
+  .prices-form span {
+    font-size: 1.3rem;
   }
 }
