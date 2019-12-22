@@ -33,11 +33,11 @@
 
 //Colors
 @main-color: #f7b516;
-@features-bg-color: #08243e;
+@all-inclusive-bg-color: #08243e;
 @bg-color: #0b3554;
 @header-bg-color: #191919;
 @btn-color: #1866af;
-;
+
 @light: #fff;
 
 html {
@@ -54,18 +54,21 @@ body {
     }
 
 }
-form{
-    input{
+
+form {
+    input {
         background-color: #f2f2f2;
         font-size: 1.6rem;
         width: 100%;
         padding: 2rem;
         border: none;
     }
-    .mail-input{
+
+    .mail-input {
         background: #f2f2f2 url(../img/prices/envelope.png) no-repeat center right 2rem;
     }
-    .phone-input{
+
+    .phone-input {
         background: #f2f2f2 url(../img/prices/phone.png) no-repeat center right 2rem;
     }
 }
@@ -80,11 +83,12 @@ button {
     background-color: @btn-color;
     border: none;
     text-transform: uppercase;
-    &:hover{
-        background: darken(@btn-color,10%);
+
+    &:hover {
+        background: darken(@btn-color, 10%);
     }
 
-    
+
 }
 
 .main {
@@ -158,32 +162,65 @@ button {
 }
 
 //Prices
-.prices{
+.prices {
     background: url(../img/prices/prices-bg.jpg) no-repeat center;
-    h2{
+
+    h2 {
         .black();
         font-size: 3rem;
     }
-    span{
+
+    span {
         font-size: 1.4rem;
     }
-    &-form{
+
+    &-form {
         margin-top: 6rem;
-        margin-bottom: 2rem;
+        margin-bottom: 13rem;
+
     }
-    input{
+
+    input {
         margin-bottom: 3rem;
     }
-    
-    .button{
+
+    .button {
         font-size: 1.7rem;
         width: 100%;
     }
 }
 
+.all-inclusive {
+    background-color: @all-inclusive-bg-color;
+    color: @light;
+
+    h2{
+        .black();
+        font-size: 3.6rem;
+    }
+    span{
+        font-size: 2rem;
+    }
+    &-block {
+        color: @light;
+
+        img {
+            max-height: 6.5rem;
+            margin-top: 10rem;
+            margin-bottom: 4rem;
+        }
+
+        span {
+            display: block;
+            font-size: 1.8rem;
+        }
+    }
+}
+
+
 //Media
 @media (max-width:991px) {
-    button{
+    button {
         padding-left: 1rem;
         padding-right: 1rem;
         font-size: 0.9rem;
@@ -191,52 +228,68 @@ button {
         width: 100%;
         padding-top: 0;
     }
-    .main{
-        .header{
+
+    .main {
+        .header {
             padding-bottom: 1rem;
-            .phone-number{
-            font-size: 1.5rem;
+
+            .phone-number {
+                font-size: 1.5rem;
+            }
         }
-        }      
     }
-    .prices{
-        &-form{
-            input{
+
+    .prices {
+        &-form {
+            margin-bottom: 8rem;
+            input {
                 font-size: 1.2rem;
+            }
+        }
+    }
+
+    .all-inclusive{
+        &-block{
+            span{
+                font-size: 1.3rem;
             }
         }
     }
 }
 
 @media (max-width:767px) {
-    button{
+    button {
         width: 50%;
     }
-    .prices{
-        &-form{
-            img{
+
+    .prices {
+        &-form {
+            img {
                 display: none;
             }
-            button{
+
+            button {
                 margin-top: 2rem;
             }
         }
     }
 }
 
-@media (max-width:576px){
-    .main{
-        &-content{
-            h1{
-               font-size: 3rem;
+@media (max-width:576px) {
+    .main {
+        &-content {
+            h1 {
+                font-size: 3rem;
             }
         }
-        &-subtitle{
+
+        &-subtitle {
             font-size: 2rem;
         }
-        &-features{
-            &-block{
-                p{
+
+        &-features {
+            &-block {
+                p {
                     font-size: 1.5rem;
                 }
             }
@@ -244,15 +297,16 @@ button {
     }
 }
 
-@media (max-width:478px){
-    .main{
-        &-content{
+@media (max-width:478px) {
+    .main {
+        &-content {
             padding: 1rem 3rem 8rem 2rem;
         }
     }
-    .prices{
-        &-form{
-            span{
+
+    .prices {
+        &-form {
+            span {
                 font-size: 1.3rem;
             }
         }

@@ -111,7 +111,7 @@ button:hover {
 }
 .prices-form {
   margin-top: 6rem;
-  margin-bottom: 2rem;
+  margin-bottom: 13rem;
 }
 .prices input {
   margin-bottom: 3rem;
@@ -119,6 +119,29 @@ button:hover {
 .prices .button {
   font-size: 1.7rem;
   width: 100%;
+}
+.all-inclusive {
+  background-color: #08243e;
+  color: #fff;
+}
+.all-inclusive h2 {
+  font-family: 'ProximaNova-Black', sans-serif;
+  font-size: 3.6rem;
+}
+.all-inclusive span {
+  font-size: 2rem;
+}
+.all-inclusive-block {
+  color: #fff;
+}
+.all-inclusive-block img {
+  max-height: 6.5rem;
+  margin-top: 10rem;
+  margin-bottom: 4rem;
+}
+.all-inclusive-block span {
+  display: block;
+  font-size: 1.8rem;
 }
 @media (max-width: 991px) {
   button {
@@ -135,8 +158,14 @@ button:hover {
   .main .header .phone-number {
     font-size: 1.5rem;
   }
+  .prices-form {
+    margin-bottom: 8rem;
+  }
   .prices-form input {
     font-size: 1.2rem;
+  }
+  .all-inclusive-block span {
+    font-size: 1.3rem;
   }
 }
 @media (max-width: 767px) {
