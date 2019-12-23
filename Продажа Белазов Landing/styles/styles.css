@@ -22,6 +22,7 @@ body {
   padding-top: 10rem;
 }
 .section-header h2 {
+  font-family: 'ProximaNova-Black', sans-serif;
   font-size: 3rem;
 }
 .section-header span {
@@ -184,6 +185,9 @@ button:hover {
   font-family: 'ProximaNova-Black', sans-serif;
   font-size: 3.6rem;
 }
+.delivery-features-block {
+  margin-bottom: 10rem;
+}
 .delivery-features-block p {
   font-size: 1.8rem;
   padding-top: 5rem;
@@ -222,6 +226,84 @@ button:hover {
   background: url(../img/delivery/nextArrow.svg) center no-repeat;
   background-size: 100%;
 }
+.bonuses {
+  background: #08243e;
+  color: #fff;
+}
+.bonuses-header {
+  font-family: 'ProximaNova-Black', sans-serif;
+  padding-bottom: 10rem;
+}
+.bonuses-header h2 {
+  font-size: 3.6rem;
+}
+.bonuses .media-left {
+  margin: 0 auto;
+}
+.bonuses .media-body {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.bonuses .media-body p {
+  font-size: 1.8rem;
+}
+.bonuses .media .circle {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.bonuses .media .circle-border {
+  display: inline-block;
+  height: 8rem;
+  width: 8rem;
+  padding: 0.3rem;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 7rem;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.questions {
+  background: #0b3554;
+  color: #fff;
+}
+.questions-header {
+  padding-bottom: 10rem;
+}
+.questions-block li {
+  font-size: 1.6rem;
+  list-style-type: none;
+}
+.questions-block li p {
+  display: inline-block;
+}
+.questions-block li ol {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 5rem;
+  text-decoration: underline;
+}
+.questions-block-dropdown {
+  display: none;
+}
+.questions-block-dropdown_active {
+  font-size: 1rem;
+  position: absolute;
+  background: #fff;
+  color: #000;
+  max-width: 100% ;
+}
+@media (max-width: 1190px) {
+  .bonuses .media-body p {
+    font-size: 1.5rem;
+  }
+  .questions-block-img img {
+    max-width: 48rem;
+  }
+}
 @media (max-width: 991px) {
   button {
     padding-left: 1rem;
@@ -249,6 +331,12 @@ button:hover {
   .all-inclusive-block span {
     font-size: 1.3rem;
   }
+  .bonuses .media-left {
+    margin-top: 3rem;
+  }
+  .questions-block-img img {
+    max-width: 70rem;
+  }
 }
 @media (max-width: 767px) {
   button {
@@ -266,6 +354,9 @@ button:hover {
   .items-form input {
     margin-bottom: 2rem;
   }
+  .questions-block-img img {
+    max-width: 50rem;
+  }
 }
 @media (max-width: 576px) {
   .main-content h1 {
@@ -280,12 +371,18 @@ button:hover {
   .items-header span {
     font-size: 1.3rem;
   }
+  .questions-block-img img {
+    max-width: 100%;
+  }
 }
 @media (max-width: 478px) {
   .main-content {
     padding: 1rem 3rem 8rem 2rem;
   }
   .prices-form span {
+    font-size: 1.3rem;
+  }
+  .questions-block li {
     font-size: 1.3rem;
   }
 }
