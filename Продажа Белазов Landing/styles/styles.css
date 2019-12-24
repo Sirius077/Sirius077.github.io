@@ -206,26 +206,6 @@ button:hover {
 .delivery-features-block a:hover {
   text-decoration: none;
 }
-.delivery .arrow {
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 99;
-  width: 2rem;
-  height: 2rem;
-  border: none;
-}
-.delivery .prev {
-  position: absolute;
-  left: 0%;
-  background: url(../img/delivery/prevArrow.svg) center no-repeat;
-  background-size: 100%;
-}
-.delivery .next {
-  position: absolute;
-  right: 0%;
-  background: url(../img/delivery/nextArrow.svg) center no-repeat;
-  background-size: 100%;
-}
 .bonuses {
   background: #08243e;
   color: #fff;
@@ -295,6 +275,88 @@ button:hover {
   background: #fff;
   color: #000;
   max-width: 100% ;
+}
+.convenience h2 {
+  font-family: 'ProximaNova-Black', sans-serif;
+  font-size: 3.6rem;
+}
+.convenience span {
+  font-size: 2rem;
+}
+.convenience-block {
+  padding-bottom: 10rem;
+}
+.convenience-block img {
+  margin-top: 10rem;
+  margin-bottom: 4rem;
+}
+.convenience-block span {
+  display: block;
+  font-size: 1.8rem;
+  max-width: 22rem;
+  margin: 0 auto;
+}
+.storage-features {
+  padding-right: 5rem;
+}
+.storage-block {
+  display: inline-block;
+}
+.storage-block img {
+  margin: 0 auto;
+  max-width: 90%;
+}
+.storage .arrow {
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 99;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+}
+.storage .prev {
+  position: absolute;
+  left: 0%;
+  background: url(../img/delivery/prevArrow.svg) center no-repeat;
+  background-size: 100%;
+}
+.storage .next {
+  position: absolute;
+  right: 0%;
+  background: url(../img/delivery/nextArrow.svg) center no-repeat;
+  background-size: 100%;
+}
+.service-header {
+  padding-bottom: 10rem;
+}
+.service .media-left {
+  margin: 0 auto;
+}
+.service .media-body {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.service .media-body p {
+  font-size: 1.8rem;
+}
+.service .media .circle {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.service .media .circle-border {
+  display: inline-block;
+  height: 15rem;
+  width: 15rem;
+  padding: 0.3rem;
+  border: 2px solid #f7b516;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 12rem;
+  color: #f7b516;
+  font-size: 1.6rem;
+  font-weight: 700;
 }
 @media (max-width: 1190px) {
   .bonuses .media-body p {
@@ -384,5 +446,8 @@ button:hover {
   }
   .questions-block li {
     font-size: 1.3rem;
+  }
+  .service-header h2 {
+    font-size: 2.2rem;
   }
 }
